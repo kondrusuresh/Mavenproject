@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="PAVAN-PC" name="com.crm.qa.TestCases.LoginPageTest" tests="3" failures="0" timestamp="16 Dec 2018 06:05:16 GMT" time="0.129" errors="0">
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <failure type="java.lang.NoClassDefFoundError" message="com/google/common/collect/ImmutableMap">
+      <![CDATA[java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.firefox.FirefoxDriver.<clinit>(FirefoxDriver.java:108)
+	at com.crm.qa.BaseClass.TestBase.initialization(TestBase.java:50)
+	at com.crm.qa.TestCases.LoginPageTest.setUp(LoginPageTest.java:26)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 more
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class org.openqa.selenium.firefox.FirefoxDriver">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.firefox.FirefoxDriver
+	at com.crm.qa.BaseClass.TestBase.initialization(TestBase.java:50)
+	at com.crm.qa.TestCases.LoginPageTest.setUp(LoginPageTest.java:26)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class org.openqa.selenium.firefox.FirefoxDriver">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.firefox.FirefoxDriver
+	at com.crm.qa.BaseClass.TestBase.initialization(TestBase.java:50)
+	at com.crm.qa.TestCases.LoginPageTest.setUp(LoginPageTest.java:26)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="loginPageTitleTest" time="0.004" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="crmLogoImageTest" time="0.003" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="loginTest" time="0.003" classname="com.crm.qa.TestCases.LoginPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>
