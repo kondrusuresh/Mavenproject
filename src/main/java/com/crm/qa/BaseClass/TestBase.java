@@ -21,6 +21,7 @@ public class TestBase
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	
+	//Using Base Class we achieve Inheritance
 	public TestBase() //Constructor to read data from property file.
 	{
 		try 
