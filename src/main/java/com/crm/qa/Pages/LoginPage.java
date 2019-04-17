@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.BaseClass.TestBase;
-import com.crm.qa.Utilities.LogManager;
 
 public class LoginPage extends TestBase 
 {

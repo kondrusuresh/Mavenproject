@@ -1,0 +1,31 @@
+2019-04-17 21:03:35,692  INFO [main] LoginPageTest:29 - Browser Launched Successfully
+2019-04-17 21:03:35,926  INFO [main] LoginPageTest:39 - Login Page Title Verified
+2019-04-17 21:03:36,758  INFO [main] LoginPageTest:61 - Browser Terminated
+2019-04-17 21:03:48,039  INFO [main] LoginPageTest:36 - Browser Launched Successfully
+2019-04-17 21:03:58,014  INFO [main] LoginPageTest:54 - Home Page Title Verified
+2019-04-17 21:03:58,776  INFO [main] LoginPageTest:85 - Browser Terminated
+2019-04-17 21:04:08,451  INFO [main] LoginPageTest:29 - Browser Launched Successfully
+2019-04-17 21:04:08,702  INFO [main] LoginPageTest:47 - CRM Log Verified
+2019-04-17 21:04:09,534  INFO [main] LoginPageTest:61 - Browser Terminated
+2019-04-17 21:04:20,186  INFO [main] LoginPageTest:36 - Browser Launched Successfully
+2019-04-17 21:04:33,227  INFO [main] LoginPageTest:62 - UserName Verified
+2019-04-17 21:04:34,311  INFO [main] LoginPageTest:85 - Browser Terminated
+2019-04-17 21:04:44,574  INFO [main] LoginPageTest:29 - Browser Launched Successfully
+2019-04-17 21:04:55,916  INFO [main] LoginPageTest:54 - Successfully Logged into CRM Application
+2019-04-17 21:04:57,128  INFO [main] LoginPageTest:61 - Browser Terminated
+2019-04-17 21:05:09,217  INFO [main] LoginPageTest:36 - Browser Launched Successfully
+2019-04-17 21:05:19,159  INFO [main] LoginPageTest:70 - Switched into Frame and Clicked on Contacts Link
+2019-04-17 21:05:20,053  INFO [main] LoginPageTest:85 - Browser Terminated
+2019-04-17 21:05:37,888  INFO [main] LoginPageTest:36 - Browser Launched Successfully
+2019-04-17 21:05:46,946  INFO [main] LoginPageTest:78 - Switched into Frame and Clicked on Deals Link
+2019-04-17 21:05:47,645  INFO [main] LoginPageTest:85 - Browser Terminated
+2019-04-17 21:05:48,289 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-04-17 21:05:48,291 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-04-17 21:05:48,294 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-04-17 21:05:48,296 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-04-17 21:05:48,296 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-04-17 21:05:48,827 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-04-17 21:05:48,827 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-04-17 21:05:48,828 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-04-17 21:05:48,829 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-04-17 21:05:48,829 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
