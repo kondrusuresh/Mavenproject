@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,10 +21,12 @@ public class TestBase
 	public static Properties property; //Making public So that we can use in all Child Classes.
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	
+	public static Logger Log;
+		
 	//Using Base Class we achieve Inheritance Concept
 	public TestBase() //Constructor to read data from property file.
 	{
+		Log = Logger.getLogger(this.getClass()); //Logger Implementation
 		try 
 		{
 			property = new Properties();

@@ -1,6 +1,5 @@
 package com.crm.qa.TestCases;
 
-import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,8 +20,6 @@ public class ContactsPageTest extends TestBase
 	TestUtility testUtil;
 	ContactsPage contactsPage;
 	DealsPage dealsPage;
-	
-	Logger Log = Logger.getLogger(LoginPageTest.class);
 	
 	String sheetName = "Contacts"; //Passing Excel Sheet Name
 	

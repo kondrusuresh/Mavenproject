@@ -1,31 +1,49 @@
-2019-04-17 21:03:35,692  INFO [main] LoginPageTest:29 - Browser Launched Successfully
-2019-04-17 21:03:35,926  INFO [main] LoginPageTest:39 - Login Page Title Verified
-2019-04-17 21:03:36,758  INFO [main] LoginPageTest:61 - Browser Terminated
-2019-04-17 21:03:48,039  INFO [main] LoginPageTest:36 - Browser Launched Successfully
-2019-04-17 21:03:58,014  INFO [main] LoginPageTest:54 - Home Page Title Verified
-2019-04-17 21:03:58,776  INFO [main] LoginPageTest:85 - Browser Terminated
-2019-04-17 21:04:08,451  INFO [main] LoginPageTest:29 - Browser Launched Successfully
-2019-04-17 21:04:08,702  INFO [main] LoginPageTest:47 - CRM Log Verified
-2019-04-17 21:04:09,534  INFO [main] LoginPageTest:61 - Browser Terminated
-2019-04-17 21:04:20,186  INFO [main] LoginPageTest:36 - Browser Launched Successfully
-2019-04-17 21:04:33,227  INFO [main] LoginPageTest:62 - UserName Verified
-2019-04-17 21:04:34,311  INFO [main] LoginPageTest:85 - Browser Terminated
-2019-04-17 21:04:44,574  INFO [main] LoginPageTest:29 - Browser Launched Successfully
-2019-04-17 21:04:55,916  INFO [main] LoginPageTest:54 - Successfully Logged into CRM Application
-2019-04-17 21:04:57,128  INFO [main] LoginPageTest:61 - Browser Terminated
-2019-04-17 21:05:09,217  INFO [main] LoginPageTest:36 - Browser Launched Successfully
-2019-04-17 21:05:19,159  INFO [main] LoginPageTest:70 - Switched into Frame and Clicked on Contacts Link
-2019-04-17 21:05:20,053  INFO [main] LoginPageTest:85 - Browser Terminated
-2019-04-17 21:05:37,888  INFO [main] LoginPageTest:36 - Browser Launched Successfully
-2019-04-17 21:05:46,946  INFO [main] LoginPageTest:78 - Switched into Frame and Clicked on Deals Link
-2019-04-17 21:05:47,645  INFO [main] LoginPageTest:85 - Browser Terminated
-2019-04-17 21:05:48,289 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-04-17 21:05:48,291 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-04-17 21:05:48,294 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-04-17 21:05:48,296 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-04-17 21:05:48,296 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2019-04-17 21:05:48,827 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-04-17 21:05:48,827 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-04-17 21:05:48,828 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-04-17 21:05:48,829 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-04-17 21:05:48,829 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-04-26 22:40:06,875  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-26 22:40:07,057  INFO [main] LoginPage:36 - Login Page Title Verified
+2019-04-26 22:40:07,828  INFO [main] LoginPage:58 - Browser Terminated
+2019-04-26 22:40:20,606  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-26 22:40:36,866  INFO [main] HomePage:51 - Home Page Title Verified
+2019-04-26 22:40:37,561  INFO [main] HomePage:82 - Browser Terminated
+2019-04-26 22:40:49,094  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:40:56,297  INFO [main] ContactsPage:50 - Verified Contacts Page Label
+2019-04-26 22:40:56,941  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:41:09,157  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-26 22:41:09,222  INFO [main] LoginPage:44 - CRM Log Verified
+2019-04-26 22:41:09,867  INFO [main] LoginPage:58 - Browser Terminated
+2019-04-26 22:41:22,456  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-26 22:41:31,617  INFO [main] HomePage:59 - UserName Verified
+2019-04-26 22:41:32,309  INFO [main] HomePage:82 - Browser Terminated
+2019-04-26 22:41:45,057  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:41:57,840  INFO [main] ContactsPage:58 - Verified Single Contacts
+2019-04-26 22:41:58,650  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:42:10,890  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-26 22:42:17,520  INFO [main] HomePage:51 - Successfully Logged into CRM Application
+2019-04-26 22:42:18,184  INFO [main] HomePage:58 - Browser Terminated
+2019-04-26 22:42:33,912  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-26 22:42:43,546  INFO [main] ContactsPage:67 - Switched into Frame and Clicked on Contacts Link
+2019-04-26 22:42:44,243  INFO [main] ContactsPage:82 - Browser Terminated
+2019-04-26 22:42:57,939  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:43:07,150  INFO [main] ContactsPage:66 - Verified Multiple Contacts
+2019-04-26 22:43:07,858  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:43:21,580  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-26 22:43:32,512  INFO [main] DealsPage:75 - Switched into Frame and Clicked on Deals Link
+2019-04-26 22:43:33,299  INFO [main] DealsPage:82 - Browser Terminated
+2019-04-26 22:43:54,166  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:44:11,165  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-26 22:44:11,813  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:44:25,164  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:44:42,294  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-26 22:44:43,022  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:44:56,115  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-26 22:45:12,602  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-26 22:45:13,320  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-26 22:45:14,587 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-04-26 22:45:14,591 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-04-26 22:45:14,595 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-04-26 22:45:14,597 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-04-26 22:45:14,598 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-04-26 22:45:15,699 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-04-26 22:45:15,700 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-04-26 22:45:15,701 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-04-26 22:45:15,702 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-04-26 22:45:15,703 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
