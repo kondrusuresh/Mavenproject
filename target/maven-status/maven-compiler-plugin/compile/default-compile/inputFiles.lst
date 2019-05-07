@@ -1,6 +1,5 @@
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Pages\DealsPage.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\ExtentReportListener\ExtentReportListener.java
-D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Utilities\LogManager.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Pages\TasksPage.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\BaseClass\TestBase.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Utilities\WebEventListener.java
@@ -8,5 +7,4 @@ D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\P
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Pages\SignUpPage.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Utilities\TestUtility.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Pages\LoginPage.java
-D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Utilities\BaseTestsLog.java
 D:\Pavan_JavaPractice\Automation\MavenHybridFramework\src\main\java\com\crm\qa\Pages\HomePage.java

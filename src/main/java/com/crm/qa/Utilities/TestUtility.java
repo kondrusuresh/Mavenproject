@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.mail.DefaultAuthenticator;
@@ -180,7 +181,20 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//12. Element is Enable or Not
+	//12. WindowHandles Function to Switch between 2 or 3 Windows
+	public void switchWindow(WebDriver driver, String firstWindow, String secondWindow)
+	{
+		Set<String> windowHandles = driver.getWindowHandles();
+		for(String windows : windowHandles)
+		{
+			if(!windows.equals(firstWindow) && !windows.equals(secondWindow))
+			{
+				driver.switchTo().window(windows);
+			}
+		}
+	}
+	
+	//13. Element is Enable or Not
 	public static void enableElement()
 	{
 		boolean enable=driver.findElement(By.xpath("")).isEnabled();
@@ -194,7 +208,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//13. Sending Email 
+	//14. Sending Email 
 	//You can refer the user guide https://commons.apache.org/proper/commons-email/userguide.html
 	public static void sendEmail() throws EmailException
 	{

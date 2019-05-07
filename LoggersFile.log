@@ -1,49 +1,39 @@
-2019-04-26 22:40:06,875  INFO [main] WebEventListener:26 - Browser Launched Successfully
-2019-04-26 22:40:07,057  INFO [main] LoginPage:36 - Login Page Title Verified
-2019-04-26 22:40:07,828  INFO [main] LoginPage:58 - Browser Terminated
-2019-04-26 22:40:20,606  INFO [main] WebEventListener:33 - Browser Launched Successfully
-2019-04-26 22:40:36,866  INFO [main] HomePage:51 - Home Page Title Verified
-2019-04-26 22:40:37,561  INFO [main] HomePage:82 - Browser Terminated
-2019-04-26 22:40:49,094  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:40:56,297  INFO [main] ContactsPage:50 - Verified Contacts Page Label
-2019-04-26 22:40:56,941  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:41:09,157  INFO [main] WebEventListener:26 - Browser Launched Successfully
-2019-04-26 22:41:09,222  INFO [main] LoginPage:44 - CRM Log Verified
-2019-04-26 22:41:09,867  INFO [main] LoginPage:58 - Browser Terminated
-2019-04-26 22:41:22,456  INFO [main] WebEventListener:33 - Browser Launched Successfully
-2019-04-26 22:41:31,617  INFO [main] HomePage:59 - UserName Verified
-2019-04-26 22:41:32,309  INFO [main] HomePage:82 - Browser Terminated
-2019-04-26 22:41:45,057  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:41:57,840  INFO [main] ContactsPage:58 - Verified Single Contacts
-2019-04-26 22:41:58,650  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:42:10,890  INFO [main] WebEventListener:26 - Browser Launched Successfully
-2019-04-26 22:42:17,520  INFO [main] HomePage:51 - Successfully Logged into CRM Application
-2019-04-26 22:42:18,184  INFO [main] HomePage:58 - Browser Terminated
-2019-04-26 22:42:33,912  INFO [main] WebEventListener:33 - Browser Launched Successfully
-2019-04-26 22:42:43,546  INFO [main] ContactsPage:67 - Switched into Frame and Clicked on Contacts Link
-2019-04-26 22:42:44,243  INFO [main] ContactsPage:82 - Browser Terminated
-2019-04-26 22:42:57,939  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:43:07,150  INFO [main] ContactsPage:66 - Verified Multiple Contacts
-2019-04-26 22:43:07,858  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:43:21,580  INFO [main] WebEventListener:33 - Browser Launched Successfully
-2019-04-26 22:43:32,512  INFO [main] DealsPage:75 - Switched into Frame and Clicked on Deals Link
-2019-04-26 22:43:33,299  INFO [main] DealsPage:82 - Browser Terminated
-2019-04-26 22:43:54,166  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:44:11,165  INFO [main] ContactsPage:84 - New Contacts Created Successfully
-2019-04-26 22:44:11,813  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:44:25,164  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:44:42,294  INFO [main] ContactsPage:84 - New Contacts Created Successfully
-2019-04-26 22:44:43,022  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:44:56,115  INFO [main] TestUtility:36 - Browser Launched Successfully
-2019-04-26 22:45:12,602  INFO [main] ContactsPage:84 - New Contacts Created Successfully
-2019-04-26 22:45:13,320  INFO [main] ContactsPage:91 - Browser Terminated
-2019-04-26 22:45:14,587 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-04-26 22:45:14,591 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-04-26 22:45:14,595 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-04-26 22:45:14,597 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-04-26 22:45:14,598 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2019-04-26 22:45:15,699 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-04-26 22:45:15,700 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-04-26 22:45:15,701 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-04-26 22:45:15,702 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-04-26 22:45:15,703 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/PAVAN/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-04-28 13:21:41,607  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:21:53,422  INFO [main] ContactsPage:50 - Verified Contacts Page Label
+2019-04-28 13:21:54,253  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:22:08,244  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-28 13:22:19,415  INFO [main] HomePage:51 - Home Page Title Verified
+2019-04-28 13:22:20,139  INFO [main] HomePage:82 - Browser Terminated
+2019-04-28 13:22:32,431  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-28 13:22:32,448  INFO [main] LoginPage:36 - Login Page Title Verified
+2019-04-28 13:22:33,085  INFO [main] LoginPage:58 - Browser Terminated
+2019-04-28 13:22:45,399  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:22:54,861  INFO [main] ContactsPage:58 - Verified Single Contacts
+2019-04-28 13:22:55,524  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:23:11,700  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-28 13:23:21,953  INFO [main] HomePage:59 - UserName Verified
+2019-04-28 13:23:22,885  INFO [main] HomePage:82 - Browser Terminated
+2019-04-28 13:23:36,732  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-28 13:23:36,785  INFO [main] LoginPage:44 - CRM Log Verified
+2019-04-28 13:23:37,596  INFO [main] LoginPage:58 - Browser Terminated
+2019-04-28 13:23:53,447  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:24:05,875  INFO [main] ContactsPage:66 - Verified Multiple Contacts
+2019-04-28 13:24:06,531  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:24:17,909  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-28 13:24:30,517  INFO [main] ContactsPage:67 - Switched into Frame and Clicked on Contacts Link
+2019-04-28 13:24:31,260  INFO [main] ContactsPage:82 - Browser Terminated
+2019-04-28 13:24:43,309  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-04-28 13:24:50,464  INFO [main] HomePage:51 - Successfully Logged into CRM Application
+2019-04-28 13:24:51,132  INFO [main] HomePage:58 - Browser Terminated
+2019-04-28 13:25:07,805  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:25:33,751  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-28 13:25:34,607  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:25:47,572  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:26:05,459  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-28 13:26:06,248  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:26:18,199  INFO [main] TestUtility:36 - Browser Launched Successfully
+2019-04-28 13:26:37,607  INFO [main] ContactsPage:84 - New Contacts Created Successfully
+2019-04-28 13:26:38,346  INFO [main] ContactsPage:91 - Browser Terminated
+2019-04-28 13:26:51,511  INFO [main] WebEventListener:33 - Browser Launched Successfully
+2019-04-28 13:27:02,152  INFO [main] DealsPage:75 - Switched into Frame and Clicked on Deals Link
+2019-04-28 13:27:03,034  INFO [main] DealsPage:82 - Browser Terminated
