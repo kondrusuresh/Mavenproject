@@ -23,7 +23,7 @@ public class TestBase
 	public static WebEventListener eventListener;
 	public static Logger Log;
 		
-	//Using Base Class we achieve Inheritance Concept
+	//Using Base Class we achieving Inheritance Concept from Java
 	public TestBase() //Constructor to read data from property file.
 	{
 		Log = Logger.getLogger(this.getClass()); //Logger Implementation
