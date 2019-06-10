@@ -82,12 +82,11 @@ public class TestUtility extends TestBase
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) 
 			{
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				// System.out.println(data[i][k]);
+				//System.out.println(data[i][k]);
 			}
 		}
 		return data;
 	}
-	
 	
 	//4. Screenshot Utility.
 	public static void takeScreenshotAtEndOfTest() throws IOException
