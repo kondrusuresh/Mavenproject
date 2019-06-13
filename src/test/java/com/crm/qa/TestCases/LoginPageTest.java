@@ -41,7 +41,7 @@ public class LoginPageTest extends TestBase
 	{
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag); //If Flag is True, Assertion will be Passed.
-		Log.info("CRM Log Verified");
+		Log.info("CRM Logo Verified");
 	}
 	
 	@Test(priority=3, invocationCount = 1) //Test Case 3
