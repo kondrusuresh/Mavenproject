@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Free CRM App Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 10 21:05:11 IST 2019</td>
+<td>Started on:</td><td>Mon Jul 08 00:16:17 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>150 seconds (150571 ms)</td>
+<tr><td>Total time:</td><td>325 seconds (325003 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,202 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.selectMultipleContactsTest()'><b>selectMultipleContactsTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 5687ef56cad9c10251cbf1e36fe6bf80
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.Pages.ContactsPage.selectContactByName(ContactsPage.java:40)
+	at com.crm.qa.TestCases.ContactsPageTest.selectMultipleContactsTest(ContactsPageTest.java:64)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973604791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973604791'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 5687ef56cad9c10251cbf1e36fe6bf80
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.Pages.ContactsPage.selectContactByName(ContactsPage.java:40)
+	at com.crm.qa.TestCases.ContactsPageTest.selectMultipleContactsTest(ContactsPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>30</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.selectSingleContactsTest()'><b>selectSingleContactsTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: ddbfeaf6caa7c81b7d4052b5f0c17d7f
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.Pages.ContactsPage.selectContactByName(ContactsPage.java:40)
+	at com.crm.qa.TestCases.ContactsPageTest.selectSingleContactsTest(ContactsPageTest.java:57)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170788511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170788511'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: ddbfeaf6caa7c81b7d4052b5f0c17d7f
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sai Baba&apos;)]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.Pages.ContactsPage.selectContactByName(ContactsPage.java:40)
+	at com.crm.qa.TestCases.ContactsPageTest.selectSingleContactsTest(ContactsPageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>30</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,37 +274,57 @@ function toggleAllBoxes() {
 <td title='com.crm.qa.TestCases.LoginPageTest.crmLogoImageTest()'><b>crmLogoImageTest</b><br>Test class: com.crm.qa.TestCases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.crm.qa.TestCases.LoginPageTest@185d8b6</td></tr>
+<td>com.crm.qa.TestCases.LoginPageTest@527740a2</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.crm.qa.TestCases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.crm.qa.TestCases.LoginPageTest@185d8b6</td></tr>
+<td>com.crm.qa.TestCases.LoginPageTest@527740a2</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.crm.qa.TestCases.LoginPageTest</td>
 <td></td>
-<td>9</td>
-<td>com.crm.qa.TestCases.LoginPageTest@185d8b6</td></tr>
+<td>6</td>
+<td>com.crm.qa.TestCases.LoginPageTest@527740a2</td></tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest<br>Parameters: Mr., Tom, Peter, Google</td>
+<td></td>
+<td>6</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest<br>Parameters: Dr., David, Cris, Amazon</td>
+<td></td>
+<td>6</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest<br>Parameters: Mrs., Muktha, Sharma, Ebay</td>
+<td></td>
+<td>6</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.HomePageTest.verifyContactsLinkTest()'><b>verifyContactsLinkTest</b><br>Test class: com.crm.qa.TestCases.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>com.crm.qa.TestCases.HomePageTest@1784306</td></tr>
+<td>1</td>
+<td>com.crm.qa.TestCases.HomePageTest@13a5fe33</td></tr>
+<tr>
+<td title='com.crm.qa.TestCases.ContactsPageTest.verifyContactsPageLabelTest()'><b>verifyContactsPageLabelTest</b><br>Test class: com.crm.qa.TestCases.ContactsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.TestCases.ContactsPageTest@3108bc</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.HomePageTest.verifyDealsPageLinkTest()'><b>verifyDealsPageLinkTest</b><br>Test class: com.crm.qa.TestCases.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>com.crm.qa.TestCases.HomePageTest@1784306</td></tr>
+<td>1</td>
+<td>com.crm.qa.TestCases.HomePageTest@13a5fe33</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.crm.qa.TestCases.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.crm.qa.TestCases.HomePageTest@1784306</td></tr>
+<td>com.crm.qa.TestCases.HomePageTest@13a5fe33</td></tr>
 <tr>
 <td title='com.crm.qa.TestCases.HomePageTest.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: com.crm.qa.TestCases.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.crm.qa.TestCases.HomePageTest@1784306</td></tr>
+<td>com.crm.qa.TestCases.HomePageTest@13a5fe33</td></tr>
 </table><p>
 </body>
 </html>

@@ -6,13 +6,14 @@
   </listeners>
   <test name="Free CRM App Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.TestCases.LoginPageTest">
+      <class name="com.crm.qa.TestCases.ContactsPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="selectMultipleContactsTest"/>
           <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
+          <include name="selectSingleContactsTest"/>
         </methods>
-      </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
+      </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->
     </classes>
   </test> <!-- Free CRM App Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
