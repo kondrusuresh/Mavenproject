@@ -25,7 +25,7 @@ public class LoginPageTest extends TestBase
 		initialization();
 		Log.info("Browser Launched Successfully");
 		
-		loginPage = new LoginPage(); //Here we create objects to access methods from other class
+		loginPage = new LoginPage(); //Here we create objects to access methods from other Class.
 	}
 	
 	@Test(priority=1) //Test Case 1
