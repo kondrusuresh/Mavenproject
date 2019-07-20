@@ -8,7 +8,9 @@
 		<listener class-name="com.crm.qa.ExtentReportListener.ExtentReportListener"/>
 	</listeners>
 	
-	<test name="Free CRM App Test Cases">
+	<test name="Free CRM App Chrome Test Cases">
+	
+	<parameter name="Browser" value="chrome"/>
 	
 		<classes>
 			<!-- Below Test Cases will be Executed in Sequence -->
@@ -20,5 +22,5 @@
 		</classes>
 		
 	</test>
-	
+
 </suite>
