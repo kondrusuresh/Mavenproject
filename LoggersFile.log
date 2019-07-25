@@ -1,31 +1,30 @@
-2019-07-20 14:09:58,495  INFO [main] WebEventListener:27 - Browser Launched Successfully
-2019-07-20 14:09:58,588  INFO [main] LoginPage:37 - Login Page Title Verified
-2019-07-20 14:09:59,374  INFO [main] LoginPage:59 - Browser Terminated
-2019-07-20 14:10:09,653  INFO [main] WebEventListener:34 - Browser Launched Successfully
-2019-07-20 14:10:15,418  INFO [main] HomePage:52 - Home Page Title Verified
-2019-07-20 14:10:16,048  INFO [main] HomePage:83 - Browser Terminated
-2019-07-20 14:10:26,389  INFO [main] WebEventListener:27 - Browser Launched Successfully
-2019-07-20 14:10:26,465  INFO [main] LoginPage:45 - CRM Logo Verified
-2019-07-20 14:10:27,107  INFO [main] LoginPage:59 - Browser Terminated
-2019-07-20 14:10:38,213  INFO [main] WebEventListener:34 - Browser Launched Successfully
-2019-07-20 14:10:43,772  INFO [main] HomePage:60 - UserName Verified
-2019-07-20 14:10:44,448  INFO [main] HomePage:83 - Browser Terminated
-2019-07-20 14:10:55,083  INFO [main] WebEventListener:27 - Browser Launched Successfully
-2019-07-20 14:11:01,596  INFO [main] HomePage:52 - Successfully Logged into CRM Application
-2019-07-20 14:11:02,246  INFO [main] HomePage:59 - Browser Terminated
-2019-07-20 14:11:12,668  INFO [main] WebEventListener:34 - Browser Launched Successfully
-2019-07-20 14:11:20,046  INFO [main] ContactsPage:68 - Switched into Frame and Clicked on Contacts Link
-2019-07-20 14:11:20,689  INFO [main] ContactsPage:83 - Browser Terminated
-2019-07-20 14:11:34,311  INFO [main] WebEventListener:34 - Browser Launched Successfully
-2019-07-20 14:11:40,648  INFO [main] DealsPage:76 - Switched into Frame and Clicked on Deals Link
-2019-07-20 14:11:41,374  INFO [main] DealsPage:83 - Browser Terminated
-2019-07-20 14:11:41,873 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-07-20 14:11:41,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-07-20 14:11:41,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-07-20 14:11:41,889 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-07-20 14:11:41,889 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2019-07-20 14:11:42,342 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2019-07-20 14:11:42,342 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2019-07-20 14:11:42,358 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-07-20 14:11:42,358 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-07-20 14:11:42,358 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-07-20 16:06:55,509  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-07-20 16:06:55,588  INFO [main] LoginPage:37 - Login Page Title Verified
+2019-07-20 16:07:00,161  INFO [main] LoginPage:59 - Browser Terminated
+2019-07-20 16:07:11,706  INFO [main] WebEventListener:34 - Browser Launched Successfully
+2019-07-20 16:07:16,045  INFO [main] HomePage:83 - Browser Terminated
+2019-07-20 16:07:29,918  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-07-20 16:07:30,044  INFO [main] LoginPage:45 - CRM Logo Verified
+2019-07-20 16:07:34,429  INFO [main] LoginPage:59 - Browser Terminated
+2019-07-20 16:07:55,578  INFO [main] WebEventListener:34 - Browser Launched Successfully
+2019-07-20 16:08:01,859  INFO [main] HomePage:60 - UserName Verified
+2019-07-20 16:08:06,600  INFO [main] HomePage:83 - Browser Terminated
+2019-07-20 16:08:23,684  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-07-20 16:08:23,935  INFO [main] HomePage:52 - Successfully Logged into CRM Application
+2019-07-20 16:08:28,133  INFO [main] HomePage:59 - Browser Terminated
+2019-07-20 16:08:44,795  INFO [main] WebEventListener:34 - Browser Launched Successfully
+2019-07-20 16:08:54,588  INFO [main] ContactsPage:68 - Switched into Frame and Clicked on Contacts Link
+2019-07-20 16:08:58,679  INFO [main] ContactsPage:83 - Browser Terminated
+2019-07-20 16:09:12,838  INFO [main] WebEventListener:34 - Browser Launched Successfully
+2019-07-20 16:09:23,852  INFO [main] DealsPage:76 - Switched into Frame and Clicked on Deals Link
+2019-07-20 16:09:28,083  INFO [main] DealsPage:83 - Browser Terminated
+2019-07-20 16:09:28,474 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-07-20 16:09:28,474 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-07-20 16:09:28,474 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-07-20 16:09:28,474 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-07-20 16:09:28,474 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-07-20 16:09:28,832 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-07-20 16:09:28,832 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-07-20 16:09:28,832 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-07-20 16:09:28,832 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-07-20 16:09:28,832 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

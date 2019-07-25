@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.crm.qa.ExtentReportListener.ExtentReportListener"/>
   </listeners>
-  <test name="Free CRM App Test Cases(failed)">
+  <test name="Free CRM App Chrome Test Cases(failed)">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.crm.qa.TestCases.ContactsPageTest">
+      <class name="com.crm.qa.TestCases.HomePageTest">
         <methods>
+          <include name="verifyHomePageTitleTest"/>
           <include name="setUp"/>
-          <include name="selectMultipleContactsTest"/>
           <include name="tearDown"/>
-          <include name="selectSingleContactsTest"/>
         </methods>
-      </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->
+      </class> <!-- com.crm.qa.TestCases.HomePageTest -->
     </classes>
-  </test> <!-- Free CRM App Test Cases(failed) -->
+  </test> <!-- Free CRM App Chrome Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
