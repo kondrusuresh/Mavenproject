@@ -33,7 +33,7 @@ public class ContactsPageTest extends TestBase
 	{
 		initialization();
 		testUtil = new TestUtility();
-		Log.info("Browser Launched Successfully");
+		Log.info("----------Browser Launched Successfully----------");
 		
 		loginPage = new LoginPage();
 		contactsPage = new ContactsPage();
@@ -88,6 +88,6 @@ public class ContactsPageTest extends TestBase
 	public void tearDown()
 	{
 		driver.quit();
-		Log.info("Browser Terminated");
+		Log.info("----------Browser Terminated----------");
 	}
 }

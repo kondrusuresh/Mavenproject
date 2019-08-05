@@ -9,9 +9,10 @@
     <classes>
       <class name="com.crm.qa.TestCases.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyContactsLinkTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyDealsPageLinkTest"/>
         </methods>
       </class> <!-- com.crm.qa.TestCases.HomePageTest -->
     </classes>

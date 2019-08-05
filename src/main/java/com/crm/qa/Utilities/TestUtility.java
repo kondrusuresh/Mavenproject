@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -361,6 +364,15 @@ public class TestUtility extends TestBase
     	JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
+	
+	//26.
+	//Extent Report - 1
+	public static String getSystemDate() 
+	{
+		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
+		Date date = new Date();
+		return dateFormat.format(date);
+	}
 }
 
 	

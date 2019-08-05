@@ -1,0 +1,31 @@
+2019-08-05 23:32:57,932  INFO [main] WebEventListener:27 - ----------Browser Launched Successfully----------
+2019-08-05 23:32:58,003  INFO [main] LoginPage:37 - Login Page Title Verified
+2019-08-05 23:32:58,639  INFO [main] LoginPage:59 - ----------Browser Terminated----------
+2019-08-05 23:33:10,498  INFO [main] WebEventListener:34 - ----------Browser Launched Successfully----------
+2019-08-05 23:33:16,295  INFO [main] HomePage:52 - Home Page Title Verified
+2019-08-05 23:33:16,918  INFO [main] HomePage:83 - ----------Browser Terminated----------
+2019-08-05 23:33:28,356  INFO [main] WebEventListener:27 - ----------Browser Launched Successfully----------
+2019-08-05 23:33:28,459  INFO [main] LoginPage:45 - CRM Logo Verified
+2019-08-05 23:33:29,092  INFO [main] LoginPage:59 - ----------Browser Terminated----------
+2019-08-05 23:33:42,571  INFO [main] WebEventListener:34 - ----------Browser Launched Successfully----------
+2019-08-05 23:33:47,938  INFO [main] HomePage:60 - UserName Verified
+2019-08-05 23:33:48,556  INFO [main] HomePage:83 - ----------Browser Terminated----------
+2019-08-05 23:34:04,421  INFO [main] WebEventListener:27 - ----------Browser Launched Successfully----------
+2019-08-05 23:34:09,463  INFO [main] HomePage:52 - Successfully Logged into CRM Application
+2019-08-05 23:34:10,095  INFO [main] HomePage:59 - ----------Browser Terminated----------
+2019-08-05 23:34:21,557  INFO [main] WebEventListener:34 - ----------Browser Launched Successfully----------
+2019-08-05 23:34:29,397  INFO [main] ContactsPage:68 - Switched into Frame and Clicked on Contacts Link
+2019-08-05 23:34:30,015  INFO [main] ContactsPage:83 - ----------Browser Terminated----------
+2019-08-05 23:34:43,697  INFO [main] WebEventListener:34 - ----------Browser Launched Successfully----------
+2019-08-05 23:34:53,159  INFO [main] DealsPage:76 - Switched into Frame and Clicked on Deals Link
+2019-08-05 23:34:53,777  INFO [main] DealsPage:83 - ----------Browser Terminated----------
+2019-08-05 23:34:54,111 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-05 23:34:54,113 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-05 23:34:54,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-05 23:34:54,116 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-05 23:34:54,116 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-08-05 23:34:54,557 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-05 23:34:54,558 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-05 23:34:54,558 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-05 23:34:54,559 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-05 23:34:54,559 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

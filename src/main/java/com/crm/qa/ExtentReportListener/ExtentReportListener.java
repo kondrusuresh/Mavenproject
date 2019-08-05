@@ -14,6 +14,7 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
+import com.crm.qa.Utilities.TestUtility;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -28,7 +29,7 @@ public class ExtentReportListener implements IReporter
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) 
 	{
-		extent = new ExtentReports(outputDirectory + File.separator	+ "CRMExtentReport.html", true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "/ExtentReports/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
 
 		for (ISuite suite : suites) 
 		{
