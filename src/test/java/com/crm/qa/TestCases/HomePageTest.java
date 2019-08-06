@@ -31,7 +31,7 @@ public class HomePageTest extends TestBase
 	public void setUp()
 	{
 		initialization();
-		Log.info("----------Browser Launched Successfully----------");
+		Log.info("Application Launched Successfully");
 		
 		testUtil = new TestUtility();
 		loginPage = new LoginPage();
@@ -80,6 +80,7 @@ public class HomePageTest extends TestBase
 	public void tearDown()
 	{
 		driver.quit();
-		Log.info("----------Browser Terminated----------");
+		Log.info("Browser Terminated");
+		Log.info("------------------------------");
 	}
 }

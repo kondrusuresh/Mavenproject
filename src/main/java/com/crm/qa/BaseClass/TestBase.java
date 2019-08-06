@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.BeforeTest;
 
 import com.crm.qa.Utilities.TestUtility;
 import com.crm.qa.Utilities.WebEventListener;
@@ -41,6 +42,12 @@ public class TestBase
 		{
 			e.printStackTrace();
 		}
+	}
+	
+	@BeforeTest
+	public void  Tester()
+	{
+		TestUtility.setDateForLog4j();
 	}
 	
 	public static void initialization() //Read the properties from Configuration File

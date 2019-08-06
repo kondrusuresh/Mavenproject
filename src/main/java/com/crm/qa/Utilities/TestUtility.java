@@ -15,6 +15,7 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -372,6 +373,15 @@ public class TestUtility extends TestBase
 		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
 		Date date = new Date();
 		return dateFormat.format(date);
+	}
+	
+	//27. 
+	//Set Date For Log4J
+	public static void setDateForLog4j() 
+	{
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy hhmmss");
+		System.setProperty("current_date", dateFormat.format(new Date()));
+		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}
 }
 

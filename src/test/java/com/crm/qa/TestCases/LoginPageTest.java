@@ -24,7 +24,7 @@ public class LoginPageTest extends TestBase
 	public void setUp()
 	{
 		initialization();
-		Log.info("----------Browser Launched Successfully----------");
+		Log.info("Application Launched Successfully");
 		
 		loginPage = new LoginPage(); //Here we create objects to access methods from other Class.
 	}
@@ -56,6 +56,7 @@ public class LoginPageTest extends TestBase
 	public void tearDown()
 	{
 		driver.quit();
-		Log.info("----------Browser Terminated----------");
+		Log.info("Browser Terminated");
+		Log.info("------------------------------");
 	}
 }
