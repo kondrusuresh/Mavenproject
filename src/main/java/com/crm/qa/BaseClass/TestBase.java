@@ -45,12 +45,12 @@ public class TestBase
 	}
 	
 	@BeforeTest
-	public void  Tester()
+	public void Log4JTimeAppend()
 	{
 		TestUtility.setDateForLog4j();
 	}
 	
-	public static void initialization() //Read the properties from Configuration File
+	public static void initialization() //Read the properties from Configuration File.
 	{
 		String broswerName = property.getProperty("Browser");
 		
