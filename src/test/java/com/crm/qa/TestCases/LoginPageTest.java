@@ -1,7 +1,8 @@
 package com.crm.qa.TestCases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -20,43 +21,40 @@ public class LoginPageTest extends TestBase
 		super();
 	}
 	
+	//Inside @BeforeMethod, We initialize Classes [Creating Objects].
+	@Parameters("Browser")
 	@BeforeMethod
-	public void setUp()
+	public void setUp(String Browser)
 	{
-		initialization();
+		initialization(Browser);
 		Log.info("Application Launched Successfully");
 		
 		loginPage = new LoginPage(); //Here we create objects to access methods from other Class.
 	}
 	
 	@Test(priority=1) //Test Case 1
-	public void loginPageTitleTest()
+	public void loginPageTitleTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
+		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.123");
 		Log.info("Login Page Title Verified");
 	}
 	
 	@Test(priority=2) //Test Case 2
-	public void crmLogoImageTest()
+	public void crmLogoImageTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag); //If Flag is True, Assertion will be Passed.
 		Log.info("CRM Logo Verified");
 	}
 	
 	@Test(priority=3, invocationCount = 1) //Test Case 3
-	public void loginTest()
+	public void loginTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 		Log.info("Successfully Logged into CRM Application");
-	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-		Log.info("Browser Terminated");
-		Log.info("------------------------------");
 	}
 }

@@ -11,10 +11,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.Email;
-import org.apache.commons.mail.EmailException;
-import org.apache.commons.mail.SimpleEmail;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -37,10 +33,7 @@ import org.testng.Assert;
 import com.crm.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
-{
-	
-	//Here we write all common methods which are available for all the Classes.
-	
+{	
 	//1. 
 	//These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
 	public static long Page_Load_TimeOut = 20;
@@ -58,8 +51,7 @@ public class TestUtility extends TestBase
 	//Below Function is used for getting Data from Excel.
 	//To be used with @DataProvider.
 	
-	public static String TESTDATA_SHEET_PATH = "D:\\Automation_Workspace\\MavenHybridFramework\\"
-			+ "src\\main\\java\\com\\crm\\qa\\TestData\\FreeCRMTestData.xlsx";		
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/TestData/FreeCRMTestData.xlsx";		
 	
 	static Workbook book;
 	static Sheet sheet;
@@ -88,14 +80,11 @@ public class TestUtility extends TestBase
 		}
 		sheet = book.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		//System.out.println(sheet.getLastRowNum() + "--------" +
-		//sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) 
 		{
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) 
 			{
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				//System.out.println(data[i][k]);
 			}
 		}
 		return data;
@@ -230,24 +219,6 @@ public class TestUtility extends TestBase
 	}
 	
 	//14. 
-	//Sending Email.
-	//You can refer the user guide https://commons.apache.org/proper/commons-email/userguide.html.
-	public static void sendEmail() throws EmailException
-	{
-		Email email = new SimpleEmail();
-		email.setHostName("smtp.gmail.com");
-		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("saquibhelal78@gmail.com", "****"));
-		email.setSSLOnConnect(true);
-		email.setFrom("rehan@gmail.com");
-		email.setSubject("Automation Test Report");
-		email.setMsg("This is a test mail from Selenium :-)");
-		email.addTo("rehanabrahim@gmail.com");
-		email.send();
-		System.out.println("Email Sent Successfully======>");
-	}
-	
-	//15. 
 	//To Select Value from Dropdown.
 	public static void selectValueFromDropDown(WebElement element, String value)
 	{
@@ -255,7 +226,7 @@ public class TestUtility extends TestBase
 		select.selectByVisibleText(value);
 	}
 	
-	//16 
+	//15. 
 	//To Print all the Values from Dropdown and Select a Value from Dropdown.
 	public static void selectDropDownValue(String xpathValue, String value)
 	{
@@ -273,7 +244,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//17.
+	//16.
 	//Function to Accept an Alert Popup.
 	public static void acceptAlertPopup() throws InterruptedException
 	{
@@ -291,7 +262,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//18.
+	//17.
 	//Function to Dismiss an Alert Popup.
 	public static void dismissAlertPopup() throws InterruptedException
 	{
@@ -309,7 +280,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//19.
+	//18.
 	//To Select Calendar Date Or Data Picker Using Java Script Executor.
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue)
 	{
@@ -317,7 +288,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('value','"+dateValue+"');", element);	
 	}
 	
-	//20.
+	//19.
 	//Function to Mouse Hover and Click Or Select an Element using Actions Class.
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
@@ -325,7 +296,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).build().perform();
 	}
 	
-	//21.
+	//20.
 	//Function to perform Drag and Drop using Actions Class.
 	public static void dragAndDrop(WebDriver driver, WebElement elementOne, WebElement elementTwo)
 	{
@@ -333,7 +304,7 @@ public class TestUtility extends TestBase
 		actions.dragAndDrop(elementOne, elementTwo).release().build().perform();
 	}
 	
-	//22.
+	//21.
 	//To Click on Element Using Java Script.
 	public static void clickElementByJS(WebElement element, WebDriver driver)
     {
@@ -341,7 +312,7 @@ public class TestUtility extends TestBase
     	js.executeScript("arguments[0].click();", element);	
     }
 	
-	//23.
+	//22.
 	//To Refresh Browser Using Java Script.
 	public static void refreshBrowserByJS(WebDriver driver)
     {
@@ -349,7 +320,7 @@ public class TestUtility extends TestBase
     	js.executeScript("history.go(0)");
     }
 	
-	//24.
+	//23.
 	//To Get Title Using Java Script.
 	public static String getTitleByJS(WebDriver driver)
     {
@@ -358,7 +329,7 @@ public class TestUtility extends TestBase
     	return title;
     }
 	
-	//25.
+	//24.
 	//To Scroll Down the Page Using Java Script.
 	public static void scrollPageDown(WebDriver driver)
     {
@@ -366,7 +337,7 @@ public class TestUtility extends TestBase
     	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 	
-	//26.
+	//25.
 	//Extent Report - 1
 	public static String getSystemDate() 
 	{
@@ -374,12 +345,28 @@ public class TestUtility extends TestBase
 		Date date = new Date();
 		return dateFormat.format(date);
 	}
+			
+	//26. 
+	//Extent Report - 2
+	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
+	{
+		//We have generated Date now.
+		String dateName = new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		//After execution, you could see a folder "FailedTestsScreenshots"
+		//Under Source folder
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName + ".png";
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+		return destination;
+	}
 	
 	//27. 
 	//Set Date For Log4J
 	public static void setDateForLog4j() 
 	{
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy hhmmss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("_ddMMyyy_hhmmss");
 		System.setProperty("current_date", dateFormat.format(new Date()));
 		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}

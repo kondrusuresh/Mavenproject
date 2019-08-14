@@ -17,7 +17,7 @@ public class LoginPage extends TestBase
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@class='btn btn-small' and @type='submit']") //Custom XPath We are Using here
+	@FindBy(xpath="//input[@class='btn btn-small' and @type='submit']") 
 	WebElement loginButton;
 	
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
@@ -26,14 +26,13 @@ public class LoginPage extends TestBase
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;
 	
-	//Initializing [Page Objects] all Object Repositories Elements with help of Page Factory in Constructor
-	//We initialize Page Factory Using initElements(driver, this) //This refers to Current Class Object
+	//Initializing [Page Objects] all Object Repository Elements with help of Page Factory in Constructor.
+	//We initialize Page Factory Using initElements(driver, this) //This refers to Current Class Object.
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Verify the Title of the Login Page
 	public String validateLoginPageTitle()
 	{
 		return driver.getTitle();

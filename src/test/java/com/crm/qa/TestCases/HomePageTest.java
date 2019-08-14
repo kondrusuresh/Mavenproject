@@ -1,7 +1,8 @@
 package com.crm.qa.TestCases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -26,11 +27,11 @@ public class HomePageTest extends TestBase
 		super();
 	}
 	
-	//Inside setUp(), We initialize Classes [ Creating Objects ].
+	@Parameters("Browser")
 	@BeforeMethod
-	public void setUp()
+	public void setUp(String Browser)
 	{
-		initialization();
+		initialization(Browser);
 		Log.info("Application Launched Successfully");
 		
 		testUtil = new TestUtility();
@@ -45,42 +46,38 @@ public class HomePageTest extends TestBase
 	//@Test - Execute Test Cases.
 	//@AfterMethod - Every Test Case - Close the Browser.
 	@Test(priority=1)
-	public void verifyHomePageTitleTest()
+	public void verifyHomePageTitleTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "CRMPRO", "Home Page Title is not Matched");
+		Assert.assertEquals(homePageTitle, "CRMPRO123", "Home Page Title is not Matched");
 		Log.info("Home Page Title Verified");
 	}
 	
 	@Test(priority=2)
-	public void verifyUserNameTest()
+	public void verifyUserNameTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame();
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 		Log.info("UserName Verified");
 	}
 	
 	@Test(priority=3)
-	public void verifyContactsLinkTest()
+	public void verifyContactsLinkTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
 		Log.info("Switched into Frame and Clicked on Contacts Link");
 	}
 	
 	@Test(priority=4)
-	public void verifyDealsPageLinkTest()
+	public void verifyDealsPageLinkTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame();
 		dealsPage = homePage.clickOnDealsLink();
 		Log.info("Switched into Frame and Clicked on Deals Link");
-	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-		Log.info("Browser Terminated");
-		Log.info("------------------------------");
 	}
 }

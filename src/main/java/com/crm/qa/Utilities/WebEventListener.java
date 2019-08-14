@@ -83,7 +83,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public void onException(Throwable error, WebDriver driver) 
 	{
-		System.out.println("Exception Occured: " + error);
+		/*System.out.println("Exception Occured: " +error);
 		try 
 		{
 			//Captures Screenshot When Exception Found and Stores in Screenshots Folder.
@@ -93,7 +93,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		catch (IOException e) 
 		{
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) 
@@ -106,8 +106,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Found Element By : " + by.toString());
 	}
 
-	//Non Overridden Methods of WebListener Class
-	 
+	//Non Overridden Methods of WebListener Class 
 	public void beforeScript(String script, WebDriver driver) 
 	{
 		

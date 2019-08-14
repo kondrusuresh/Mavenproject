@@ -1,9 +1,11 @@
 package com.crm.qa.TestCases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
@@ -28,10 +30,11 @@ public class ContactsPageTest extends TestBase
 		super();
 	}
 	
+	@Parameters("Browser")
 	@BeforeMethod
-	public void setUp()
+	public void setUp(String Browser)
 	{
-		initialization();
+		initialization(Browser);
 		testUtil = new TestUtility();
 		Log.info("Application Launched Successfully");
 		
@@ -39,28 +42,30 @@ public class ContactsPageTest extends TestBase
 		contactsPage = new ContactsPage();
 		dealsPage = new DealsPage();
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
-		testUtil.switchToFrame(); //For Both Methods We need to Switch into Frame before Clicking on Contacts Link.
+		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
 	}
 	
 	@Test(priority=1)
-	public void verifyContactsPageLabelTest()
+	public void verifyContactsPageLabelTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts Label is Missing in the Page");
 		Log.info("Verified Contacts Page Label");
-		//"Contacts Label is Missing in the Page" - Will be Printed only if "Assertion" Fails.
 	}
 	
 	@Test(priority=2)
-	public void selectSingleContactsTest()
+	public void selectSingleContactsTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		contactsPage.selectContactByName("Sai Baba");
 		Log.info("Verified Single Contacts");
 	}
 	
 	@Test(priority=3)
-	public void selectMultipleContactsTest()
+	public void selectMultipleContactsTest(Method method)
 	{
+		extentTest = extent.startTest(method.getName());
 		contactsPage.selectContactByName("Sai Baba");
 		contactsPage.selectContactByName("Pavan KrishnanReddy");
 		Log.info("Verified Multiple Contacts");
@@ -75,20 +80,11 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Test(priority=4, dataProvider="getCRMContactsTestData")
-	public void validateCreateNewContactTest(String Title, String FirstName, String LastName, String Company)
-	//We Must Pass Parameters as it is like we have given in Excel Column Names to Access Data
+	public void validateCreateNewContactTest(Method method, String Title, String FirstName, String LastName, String Company)
 	{
+		extentTest = extent.startTest(method.getName());
 		homePage.clickOnNewContactLink();
-		//contactsPage.createNewContact("Mr.", "Tom", "Peter", "Google"); //Hard Coding Values Here
 		contactsPage.createNewContact(Title, FirstName, LastName, Company);
 		Log.info("New Contacts Created Successfully");
-	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-		Log.info("Browser Terminated");
-		Log.info("------------------------------");
 	}
 }
