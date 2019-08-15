@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -69,13 +70,16 @@ public class TestBase
 		{
 			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		}
+		else if(Browser.equals("IE"))
+		{
+			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
 		}
 		else if(Browser.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		else
 		{

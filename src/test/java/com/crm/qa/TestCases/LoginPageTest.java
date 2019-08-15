@@ -32,7 +32,7 @@ public class LoginPageTest extends TestBase
 		loginPage = new LoginPage(); //Here we create objects to access methods from other Class.
 	}
 	
-	@Test(priority=1) //Test Case 1
+	@Test(priority=1)
 	public void loginPageTitleTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
@@ -41,7 +41,7 @@ public class LoginPageTest extends TestBase
 		Log.info("Login Page Title Verified");
 	}
 	
-	@Test(priority=2) //Test Case 2
+	@Test(priority=2)
 	public void crmLogoImageTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
@@ -50,7 +50,7 @@ public class LoginPageTest extends TestBase
 		Log.info("CRM Logo Verified");
 	}
 	
-	@Test(priority=3, invocationCount = 1) //Test Case 3
+	@Test(priority=3, invocationCount = 1) 
 	public void loginTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
