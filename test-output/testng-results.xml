@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="4" total="13" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="FREE CRM Application Test Automation Regression Suite" duration-ms="388192" started-at="2019-08-18T15:15:39Z" finished-at="2019-08-18T15:22:08Z">
+  <suite name="FREE CRM Application Test Automation Regression Suite" duration-ms="305179" started-at="2019-08-27T18:00:55Z" finished-at="2019-08-27T18:06:00Z">
     <groups>
     </groups>
-    <test name="Free CRM Application Chrome Test Cases" duration-ms="388192" started-at="2019-08-18T15:15:39Z" finished-at="2019-08-18T15:22:08Z">
+    <test name="Free CRM Application Chrome Test Cases" duration-ms="305179" started-at="2019-08-27T18:00:55Z" finished-at="2019-08-27T18:06:00Z">
       <class name="com.crm.qa.TestCases.ContactsPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="20475" started-at="2019-08-18T20:48:23Z" finished-at="2019-08-18T20:48:43Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="16699" started-at="2019-08-27T23:32:53Z" finished-at="2019-08-27T23:33:10Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsPageLabelTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="verifyContactsPageLabelTest" duration-ms="60" started-at="2019-08-18T20:48:43Z" finished-at="2019-08-18T20:48:43Z">
+        <test-method status="PASS" signature="verifyContactsPageLabelTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="verifyContactsPageLabelTest" duration-ms="57" started-at="2019-08-27T23:33:10Z" finished-at="2019-08-27T23:33:10Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsPageLabelTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="631" started-at="2019-08-18T20:48:43Z" finished-at="2019-08-18T20:48:44Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="685" started-at="2019-08-27T23:33:10Z" finished-at="2019-08-27T23:33:11Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="23829" started-at="2019-08-18T20:48:44Z" finished-at="2019-08-18T20:49:08Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="17530" started-at="2019-08-27T23:33:11Z" finished-at="2019-08-27T23:33:28Z">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="selectSingleContactsTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="selectSingleContactsTest" duration-ms="30098" started-at="2019-08-18T20:49:08Z" finished-at="2019-08-18T20:49:38Z">
+        <test-method status="FAIL" signature="selectSingleContactsTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="selectSingleContactsTest" duration-ms="30156" started-at="2019-08-27T23:33:28Z" finished-at="2019-08-27T23:33:59Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
-Session ID: 928b8b6a3f0bb242af343ee5e59c96a1
+Session ID: ce3e8c2860a8505cb8064183d56275eb
 *** Element info: {Using=xpath, value=//a[contains(text(),'Sai Baba')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]]>
             </message>
             <full-stacktrace>
@@ -83,7 +83,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
-Session ID: 928b8b6a3f0bb242af343ee5e59c96a1
+Session ID: ce3e8c2860a8505cb8064183d56275eb
 *** Element info: {Using=xpath, value=//a[contains(text(),'Sai Baba')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -140,7 +140,7 @@ Session ID: 928b8b6a3f0bb242af343ee5e59c96a1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSingleContactsTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="1123" started-at="2019-08-18T20:49:38Z" finished-at="2019-08-18T20:49:39Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="1068" started-at="2019-08-27T23:33:59Z" finished-at="2019-08-27T23:34:00Z">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@ Session ID: 928b8b6a3f0bb242af343ee5e59c96a1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="27534" started-at="2019-08-18T20:49:39Z" finished-at="2019-08-18T20:50:07Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="18270" started-at="2019-08-27T23:34:00Z" finished-at="2019-08-27T23:34:18Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@ Session ID: 928b8b6a3f0bb242af343ee5e59c96a1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="selectMultipleContactsTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="selectMultipleContactsTest" duration-ms="30063" started-at="2019-08-18T20:50:07Z" finished-at="2019-08-18T20:50:37Z">
+        <test-method status="FAIL" signature="selectMultipleContactsTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="selectMultipleContactsTest" duration-ms="30043" started-at="2019-08-27T23:34:18Z" finished-at="2019-08-27T23:34:48Z">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
-Session ID: 7d35ea3de8d468ed141f9ad842765b44
+Session ID: 208be97ea57b9040c9b93b522fee683a
 *** Element info: {Using=xpath, value=//a[contains(text(),'Sai Baba')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]]>
             </message>
             <full-stacktrace>
@@ -194,7 +194,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
-Session ID: 7d35ea3de8d468ed141f9ad842765b44
+Session ID: 208be97ea57b9040c9b93b522fee683a
 *** Element info: {Using=xpath, value=//a[contains(text(),'Sai Baba')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -251,7 +251,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMultipleContactsTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="1068" started-at="2019-08-18T20:50:37Z" finished-at="2019-08-18T20:50:38Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="997" started-at="2019-08-27T23:34:48Z" finished-at="2019-08-27T23:34:49Z">
           <params>
             <param index="0">
               <value>
@@ -262,7 +262,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="29960" started-at="2019-08-18T20:50:39Z" finished-at="2019-08-18T20:51:09Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="17120" started-at="2019-08-27T23:34:50Z" finished-at="2019-08-27T23:35:07Z">
           <params>
             <param index="0">
               <value>
@@ -273,7 +273,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="4793" started-at="2019-08-18T20:51:09Z" data-provider="getCRMContactsTestData" finished-at="2019-08-18T20:51:13Z">
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="4838" started-at="2019-08-27T23:35:07Z" data-provider="getCRMContactsTestData" finished-at="2019-08-27T23:35:12Z">
           <params>
             <param index="0">
               <value>
@@ -304,7 +304,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContactTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="653" started-at="2019-08-18T20:51:13Z" finished-at="2019-08-18T20:51:14Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="655" started-at="2019-08-27T23:35:12Z" finished-at="2019-08-27T23:35:13Z">
           <params>
             <param index="0">
               <value>
@@ -315,7 +315,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="23372" started-at="2019-08-18T20:51:14Z" finished-at="2019-08-18T20:51:37Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="18709" started-at="2019-08-27T23:35:13Z" finished-at="2019-08-27T23:35:31Z">
           <params>
             <param index="0">
               <value>
@@ -326,7 +326,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="5108" started-at="2019-08-18T20:51:37Z" data-provider="getCRMContactsTestData" finished-at="2019-08-18T20:51:42Z">
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="5354" started-at="2019-08-27T23:35:31Z" data-provider="getCRMContactsTestData" finished-at="2019-08-27T23:35:37Z">
           <params>
             <param index="0">
               <value>
@@ -357,7 +357,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContactTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="641" started-at="2019-08-18T20:51:42Z" finished-at="2019-08-18T20:51:43Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="668" started-at="2019-08-27T23:35:37Z" finished-at="2019-08-27T23:35:37Z">
           <params>
             <param index="0">
               <value>
@@ -368,7 +368,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="17546" started-at="2019-08-18T20:51:43Z" finished-at="2019-08-18T20:52:01Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="setUp" is-config="true" duration-ms="16926" started-at="2019-08-27T23:35:37Z" finished-at="2019-08-27T23:35:54Z">
           <params>
             <param index="0">
               <value>
@@ -379,7 +379,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="5590" started-at="2019-08-18T20:52:01Z" data-provider="getCRMContactsTestData" finished-at="2019-08-18T20:52:06Z">
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="validateCreateNewContactTest" duration-ms="4589" started-at="2019-08-27T23:35:54Z" data-provider="getCRMContactsTestData" finished-at="2019-08-27T23:35:59Z">
           <params>
             <param index="0">
               <value>
@@ -410,7 +410,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContactTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="784" started-at="2019-08-18T20:52:06Z" finished-at="2019-08-18T20:52:07Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="663" started-at="2019-08-27T23:35:59Z" finished-at="2019-08-27T23:36:00Z">
           <params>
             <param index="0">
               <value>
@@ -423,7 +423,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->
       <class name="com.crm.qa.TestCases.HomePageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="20855" started-at="2019-08-18T20:46:47Z" finished-at="2019-08-18T20:47:08Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="16559" started-at="2019-08-27T23:31:43Z" finished-at="2019-08-27T23:31:59Z">
           <params>
             <param index="0">
               <value>
@@ -434,7 +434,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyHomePageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitleTest" duration-ms="9" started-at="2019-08-18T20:47:08Z" finished-at="2019-08-18T20:47:08Z">
+        <test-method status="FAIL" signature="verifyHomePageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitleTest" duration-ms="28" started-at="2019-08-27T23:31:59Z" finished-at="2019-08-27T23:31:59Z">
           <params>
             <param index="0">
               <value>
@@ -485,7 +485,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="1032" started-at="2019-08-18T20:47:08Z" finished-at="2019-08-18T20:47:09Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="1060" started-at="2019-08-27T23:31:59Z" finished-at="2019-08-27T23:32:00Z">
           <params>
             <param index="0">
               <value>
@@ -496,7 +496,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="20518" started-at="2019-08-18T20:47:09Z" finished-at="2019-08-18T20:47:30Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="15611" started-at="2019-08-27T23:32:00Z" finished-at="2019-08-27T23:32:16Z">
           <params>
             <param index="0">
               <value>
@@ -507,7 +507,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserNameTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyUserNameTest" duration-ms="122" started-at="2019-08-18T20:47:30Z" finished-at="2019-08-18T20:47:30Z">
+        <test-method status="PASS" signature="verifyUserNameTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyUserNameTest" duration-ms="296" started-at="2019-08-27T23:32:16Z" finished-at="2019-08-27T23:32:16Z">
           <params>
             <param index="0">
               <value>
@@ -518,7 +518,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserNameTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="649" started-at="2019-08-18T20:47:30Z" finished-at="2019-08-18T20:47:31Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="646" started-at="2019-08-27T23:32:16Z" finished-at="2019-08-27T23:32:17Z">
           <params>
             <param index="0">
               <value>
@@ -529,7 +529,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="23068" started-at="2019-08-18T20:47:31Z" finished-at="2019-08-18T20:47:54Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="15448" started-at="2019-08-27T23:32:17Z" finished-at="2019-08-27T23:32:32Z">
           <params>
             <param index="0">
               <value>
@@ -540,7 +540,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsLinkTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyContactsLinkTest" duration-ms="2219" started-at="2019-08-18T20:47:54Z" finished-at="2019-08-18T20:47:56Z">
+        <test-method status="PASS" signature="verifyContactsLinkTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyContactsLinkTest" duration-ms="1952" started-at="2019-08-27T23:32:32Z" finished-at="2019-08-27T23:32:34Z">
           <params>
             <param index="0">
               <value>
@@ -551,7 +551,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsLinkTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="677" started-at="2019-08-18T20:47:56Z" finished-at="2019-08-18T20:47:57Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="650" started-at="2019-08-27T23:32:34Z" finished-at="2019-08-27T23:32:35Z">
           <params>
             <param index="0">
               <value>
@@ -562,7 +562,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="23776" started-at="2019-08-18T20:47:57Z" finished-at="2019-08-18T20:48:20Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="16283" started-at="2019-08-27T23:32:35Z" finished-at="2019-08-27T23:32:51Z">
           <params>
             <param index="0">
               <value>
@@ -573,7 +573,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDealsPageLinkTest(java.lang.reflect.Method)[pri:4, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyDealsPageLinkTest" duration-ms="1850" started-at="2019-08-18T20:48:20Z" finished-at="2019-08-18T20:48:22Z">
+        <test-method status="PASS" signature="verifyDealsPageLinkTest(java.lang.reflect.Method)[pri:4, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="verifyDealsPageLinkTest" duration-ms="1602" started-at="2019-08-27T23:32:51Z" finished-at="2019-08-27T23:32:53Z">
           <params>
             <param index="0">
               <value>
@@ -584,7 +584,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDealsPageLinkTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="643" started-at="2019-08-18T20:48:22Z" finished-at="2019-08-18T20:48:23Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="632" started-at="2019-08-27T23:32:53Z" finished-at="2019-08-27T23:32:53Z">
           <params>
             <param index="0">
               <value>
@@ -597,11 +597,11 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.TestCases.HomePageTest -->
       <class name="com.crm.qa.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setExtent" is-config="true" duration-ms="180" started-at="2019-08-18T20:45:39Z" finished-at="2019-08-18T20:45:40Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setExtent" is-config="true" duration-ms="375" started-at="2019-08-27T23:30:55Z" finished-at="2019-08-27T23:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="24475" started-at="2019-08-18T20:45:40Z" finished-at="2019-08-18T20:46:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="16837" started-at="2019-08-27T23:30:55Z" finished-at="2019-08-27T23:31:12Z">
           <params>
             <param index="0">
               <value>
@@ -612,7 +612,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="loginPageTitleTest" duration-ms="48" started-at="2019-08-18T20:46:04Z" finished-at="2019-08-18T20:46:04Z">
+        <test-method status="FAIL" signature="loginPageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="loginPageTitleTest" duration-ms="53" started-at="2019-08-27T23:31:12Z" finished-at="2019-08-27T23:31:12Z">
           <params>
             <param index="0">
               <value>
@@ -664,7 +664,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="1121" started-at="2019-08-18T20:46:04Z" finished-at="2019-08-18T20:46:05Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="1103" started-at="2019-08-27T23:31:12Z" finished-at="2019-08-27T23:31:13Z">
           <params>
             <param index="0">
               <value>
@@ -675,7 +675,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="14448" started-at="2019-08-18T20:46:05Z" finished-at="2019-08-18T20:46:20Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="11892" started-at="2019-08-27T23:31:13Z" finished-at="2019-08-27T23:31:25Z">
           <params>
             <param index="0">
               <value>
@@ -686,7 +686,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImageTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="crmLogoImageTest" duration-ms="128" started-at="2019-08-18T20:46:20Z" finished-at="2019-08-18T20:46:20Z">
+        <test-method status="PASS" signature="crmLogoImageTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="crmLogoImageTest" duration-ms="70" started-at="2019-08-27T23:31:25Z" finished-at="2019-08-27T23:31:25Z">
           <params>
             <param index="0">
               <value>
@@ -697,7 +697,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImageTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="621" started-at="2019-08-18T20:46:20Z" finished-at="2019-08-18T20:46:20Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="648" started-at="2019-08-27T23:31:25Z" finished-at="2019-08-27T23:31:26Z">
           <params>
             <param index="0">
               <value>
@@ -708,7 +708,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="14515" started-at="2019-08-18T20:46:20Z" finished-at="2019-08-18T20:46:35Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="setUp" is-config="true" duration-ms="10273" started-at="2019-08-27T23:31:26Z" finished-at="2019-08-27T23:31:36Z">
           <params>
             <param index="0">
               <value>
@@ -719,7 +719,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="loginTest" duration-ms="11806" started-at="2019-08-18T20:46:35Z" finished-at="2019-08-18T20:46:47Z">
+        <test-method status="PASS" signature="loginTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="loginTest" duration-ms="5661" started-at="2019-08-27T23:31:36Z" finished-at="2019-08-27T23:31:42Z">
           <params>
             <param index="0">
               <value>
@@ -730,7 +730,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="653" started-at="2019-08-18T20:46:47Z" finished-at="2019-08-18T20:46:47Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="tearDown" is-config="true" duration-ms="646" started-at="2019-08-27T23:31:42Z" finished-at="2019-08-27T23:31:43Z">
           <params>
             <param index="0">
               <value>
@@ -741,7 +741,7 @@ Session ID: 7d35ea3de8d468ed141f9ad842765b44
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="endReport" is-config="true" duration-ms="582" started-at="2019-08-18T20:52:07Z" finished-at="2019-08-18T20:52:08Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@67784306]" name="endReport" is-config="true" duration-ms="578" started-at="2019-08-27T23:36:00Z" finished-at="2019-08-27T23:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
