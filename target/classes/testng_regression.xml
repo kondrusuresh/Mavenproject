@@ -3,6 +3,10 @@
 
 <suite name="FREE CRM Application Test Automation Regression Suite">
 
+	<listeners>
+		<listener class-name="com.crm.qa.RetryLogic.MyTransformer"/>
+	</listeners>
+	
 	<test name="Free CRM Application Chrome Test Cases">
 	
 	<parameter name="Browser" value="chrome"/>

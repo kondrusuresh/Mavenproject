@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM Application Test Automation Sanity Suite]">
   <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.crm.qa.RetryLogic.MyTransformer"/>
+  </listeners>
   <test name="Free CRM Application Chrome Test Cases(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
@@ -9,14 +12,14 @@
         <methods>
           <include name="setUp"/>
           <include name="endReport"/>
-          <include name="loginPageTitleTest" invocation-numbers="0"/>
+          <include name="loginPageTitleTest" invocation-numbers="0 0 0"/>
           <include name="tearDown"/>
           <include name="setExtent"/>
         </methods>
       </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
       <class name="com.crm.qa.TestCases.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitleTest" invocation-numbers="0"/>
+          <include name="verifyHomePageTitleTest" invocation-numbers="0 0 0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
