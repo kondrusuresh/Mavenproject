@@ -36,7 +36,7 @@ public class TestBase
 	//Using Base Class we achieving Inheritance Concept from Java.
 	public TestBase() //Constructor to read data from property file.
 	{
-		Log = Logger.getLogger(this.getClass()); //Logger Implementation
+		Log = Logger.getLogger(this.getClass()); //Logger Implementation.
 		try 
 		{
 			property = new Properties();
