@@ -245,7 +245,7 @@ public class TestUtility extends TestBase
 	}
 	
 	//16.
-	//Function to Accept an Alert Popup.
+	//Function to Accept an Alert Pop-Up.
 	public static void acceptAlertPopup() throws InterruptedException
 	{
 		try
@@ -263,7 +263,7 @@ public class TestUtility extends TestBase
 	}
 	
 	//17.
-	//Function to Dismiss an Alert Popup.
+	//Function to Dismiss an Alert Pop-Up.
 	public static void dismissAlertPopup() throws InterruptedException
 	{
 		try
@@ -297,7 +297,7 @@ public class TestUtility extends TestBase
 	}
 	
 	//20.
-	//Function to perform Drag and Drop using Actions Class.
+	//Function to Drag and Drop using Actions Class.
 	public static void dragAndDrop(WebDriver driver, WebElement elementOne, WebElement elementTwo)
 	{
 		Actions actions = new Actions(driver);
@@ -305,6 +305,22 @@ public class TestUtility extends TestBase
 	}
 	
 	//21.
+	//Function to Right Click using Actions Class.
+	public static void rightClick(WebDriver driver, WebElement element)
+	{
+		Actions actions = new Actions(driver);
+		actions.contextClick(element).build().perform();
+	}
+	
+	//22.
+	//Function to Double Click using Actions Class.
+	public static void doubleClick(WebDriver driver, WebElement element)
+	{
+		Actions actions = new Actions(driver);
+		actions.doubleClick(element).build().perform();
+	}
+
+	//23.
 	//To Click on Element Using Java Script.
 	public static void clickElementByJS(WebElement element, WebDriver driver)
     {
@@ -312,7 +328,7 @@ public class TestUtility extends TestBase
     	js.executeScript("arguments[0].click();", element);	
     }
 	
-	//22.
+	//24.
 	//To Refresh Browser Using Java Script.
 	public static void refreshBrowserByJS(WebDriver driver)
     {
@@ -320,7 +336,7 @@ public class TestUtility extends TestBase
     	js.executeScript("history.go(0)");
     }
 	
-	//23.
+	//25.
 	//To Get Title Using Java Script.
 	public static String getTitleByJS(WebDriver driver)
     {
@@ -329,7 +345,7 @@ public class TestUtility extends TestBase
     	return title;
     }
 	
-	//24.
+	//26.
 	//To Scroll Down the Page Using Java Script.
 	public static void scrollPageDown(WebDriver driver)
     {
@@ -337,7 +353,7 @@ public class TestUtility extends TestBase
     	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 	
-	//25.
+	//27.
 	//Extent Report - 1
 	public static String getSystemDate() 
 	{
@@ -346,7 +362,7 @@ public class TestUtility extends TestBase
 		return dateFormat.format(date);
 	}
 			
-	//26. 
+	//28. 
 	//Extent Report - 2
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
@@ -362,7 +378,7 @@ public class TestUtility extends TestBase
 		return destination;
 	}
 	
-	//27. 
+	//29. 
 	//Set Date For Log4J
 	public static void setDateForLog4j() 
 	{
