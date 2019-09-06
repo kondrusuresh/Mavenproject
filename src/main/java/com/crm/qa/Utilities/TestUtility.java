@@ -50,11 +50,10 @@ public class TestUtility extends TestBase
 	//Excel Sheet Path - Excel Utility.
 	//Below Function is used for getting Data from Excel.
 	//To be used with @DataProvider.
-	
 	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/TestData/FreeCRMTestData.xlsx";		
-	
 	static Workbook book;
 	static Sheet sheet;
+	
 	public static Object[][] getTestData(String sheetName)
 	{
 		FileInputStream file = null;
@@ -354,7 +353,7 @@ public class TestUtility extends TestBase
     }
 	
 	//27.
-	//Extent Report - 1
+	//Extent Report - 1.
 	public static String getSystemDate() 
 	{
 		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
@@ -363,7 +362,7 @@ public class TestUtility extends TestBase
 	}
 			
 	//28. 
-	//Extent Report - 2
+	//Extent Report - 2.
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
 		//We have generated Date now.
@@ -379,7 +378,7 @@ public class TestUtility extends TestBase
 	}
 	
 	//29. 
-	//Set Date For Log4J
+	//Set Date For Log4J.
 	public static void setDateForLog4j() 
 	{
 		SimpleDateFormat dateFormat = new SimpleDateFormat("_ddMMyyy_hhmmss");
