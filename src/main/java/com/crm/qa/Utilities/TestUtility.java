@@ -118,7 +118,7 @@ public class TestUtility extends TestBase
 	
 	//7. 
 	//To Highlight the Element using Java Script.
-	public static void highLightElement(WebDriver driver,WebElement element)
+	public static void highLightElement(WebDriver driver, WebElement element)
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].setAttribute('style','background: palegreen; border: 8px solid red:')", element);
@@ -280,6 +280,36 @@ public class TestUtility extends TestBase
 	}
 	
 	//18.
+	//Method to Click on Element using Actions Class.
+	public void clickOnElementUsingActions(WebElement element)
+	{
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click().perform();
+	}
+		
+	//19.
+	//Method to Click on Element using JavaScript.
+	public void clickOnElementUsingJs(WebElement element)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+		
+	//20.
+	//Method to Match Value with List of Elements and Click on it.
+	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched)
+	{
+		for(WebElement element : listOfElements) 
+		{
+			if(element.getText().equalsIgnoreCase(valueToBeMatched)) 
+			{
+				element.click();
+				return;
+			}
+		}
+	}
+		
+	//21.
 	//To Select Calendar Date Or Data Picker Using Java Script Executor.
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue)
 	{
@@ -287,7 +317,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('value','"+dateValue+"');", element);	
 	}
 	
-	//19.
+	//22.
 	//Function to Mouse Hover and Click Or Select an Element using Actions Class.
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
@@ -295,7 +325,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).build().perform();
 	}
 	
-	//20.
+	//23.
 	//Function to Drag and Drop using Actions Class.
 	public static void dragAndDrop(WebDriver driver, WebElement elementOne, WebElement elementTwo)
 	{
@@ -303,7 +333,7 @@ public class TestUtility extends TestBase
 		actions.dragAndDrop(elementOne, elementTwo).release().build().perform();
 	}
 	
-	//21.
+	//24.
 	//Function to Right Click using Actions Class.
 	public static void rightClick(WebDriver driver, WebElement element)
 	{
@@ -311,7 +341,7 @@ public class TestUtility extends TestBase
 		actions.contextClick(element).build().perform();
 	}
 	
-	//22.
+	//25.
 	//Function to Double Click using Actions Class.
 	public static void doubleClick(WebDriver driver, WebElement element)
 	{
@@ -319,7 +349,7 @@ public class TestUtility extends TestBase
 		actions.doubleClick(element).build().perform();
 	}
 
-	//23.
+	//26.
 	//To Click on Element Using Java Script.
 	public static void clickElementByJS(WebElement element, WebDriver driver)
     {
@@ -327,7 +357,7 @@ public class TestUtility extends TestBase
     	js.executeScript("arguments[0].click();", element);	
     }
 	
-	//24.
+	//27.
 	//To Refresh Browser Using Java Script.
 	public static void refreshBrowserByJS(WebDriver driver)
     {
@@ -335,7 +365,7 @@ public class TestUtility extends TestBase
     	js.executeScript("history.go(0)");
     }
 	
-	//25.
+	//28.
 	//To Get Title Using Java Script.
 	public static String getTitleByJS(WebDriver driver)
     {
@@ -344,7 +374,7 @@ public class TestUtility extends TestBase
     	return title;
     }
 	
-	//26.
+	//29.
 	//To Scroll Down the Page Using Java Script.
 	public static void scrollPageDown(WebDriver driver)
     {
@@ -352,7 +382,7 @@ public class TestUtility extends TestBase
     	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 	
-	//27.
+	//30.
 	//Extent Report - 1.
 	public static String getSystemDate() 
 	{
@@ -361,7 +391,7 @@ public class TestUtility extends TestBase
 		return dateFormat.format(date);
 	}
 			
-	//28. 
+	//31. 
 	//Extent Report - 2.
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
@@ -377,7 +407,7 @@ public class TestUtility extends TestBase
 		return destination;
 	}
 	
-	//29. 
+	//32. 
 	//Set Date For Log4J.
 	public static void setDateForLog4j() 
 	{
