@@ -28,8 +28,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import com.crm.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
@@ -140,15 +138,15 @@ public class TestUtility extends TestBase
 		try
 		{
 			driver.switchTo().frame(frame);
-			System.out.println("Navigated to frame with id " + frame);
+			System.out.println("Navigated to Frame with Id " + frame);
 		} 
 		catch (NoSuchFrameException e) 
 		{
-			System.out.println("Unable to locate frame with id " + frame + e.getStackTrace());
+			System.out.println("Unable to Locate Frame with Id " + frame + e.getStackTrace());
 		} 
 		catch (Exception e) 
 		{
-			System.out.println("Unable to navigate to frame with id " + frame + e.getStackTrace());
+			System.out.println("Unable to Navigate to Frame with Id " + frame + e.getStackTrace());
 		}
 	}
 	
@@ -174,58 +172,60 @@ public class TestUtility extends TestBase
 	}
 	
 	//11. 
-	//Handle Alert in web base Pop-Up.
-	public static void handleWebBaseAlert()
-	{
-		String alertMsg=driver.switchTo().alert().getText();// To Capture Alert text
-		System.out.println("Alert msg is:"+alertMsg);
-		Alert alrt=driver.switchTo().alert();// In direct approach to handle alert
-		alrt.accept();
-					
-		driver.switchTo().alert().accept();
-					
-		Assert.assertEquals(alertMsg, "Field cannot be empty");//Verify Alert Message	
-	}
-	
-	//12. 
 	//Element Display or Not.
-	public static void displayElement()
+	public static void displayElement(WebElement element)
 	{
-		boolean elementDisplayed=driver.findElement(By.xpath("")).isDisplayed();
+		boolean elementDisplayed = element.isDisplayed();
 		if(elementDisplayed)
 		{
-			System.out.println("Element is displayed");
+			System.out.println("Element is Displayed");
 		}
 		else
 		{
-			System.out.println("Element is not displayed");
+			System.out.println("Element is not Displayed");
+		}
+	}
+	
+	//12. 
+	//Element is Enable or Not.
+	public static void enableElement(WebElement element)
+	{
+		boolean elementEnabled = element.isEnabled();
+		if(elementEnabled)
+		{
+			System.out.println("Element is Enabled in Page");
+		}
+		else
+		{
+			System.out.println("Element is not Enabled in Page");
 		}
 	}
 	
 	//13. 
-	//Element is Enable or Not.
-	public static void enableElement()
-	{
-		boolean enable=driver.findElement(By.xpath("")).isEnabled();
-		if(enable)
-		{
-			System.out.println("Element is enabled in page");
-		}
-		else
-		{
-			System.out.println("Element is not enabled in page");
-		}
-	}
-	
-	//14. 
-	//To Select Value from Dropdown.
-	public static void selectValueFromDropDown(WebElement element, String value)
+	//To Select Value from Dropdown by using SelectByVisibleTest Method.
+	public static void selectValueFromDropDownByText(WebElement element, String value)
 	{
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
 	}
 	
-	//15. 
+	//14.
+	//To Select Value from Dropdown by using SelectByIndex Method.
+	public static void selectValueFromDropDownByIndex(WebElement element, int value)
+	{
+		Select select = new Select(element);
+		select.selectByIndex(value);
+	}
+	
+	//15.
+	//To Select Value from Dropdown by using SelectByValue Method.
+	public static void selectValueFromDropDownByValue(WebElement element, String value)
+	{
+		Select select = new Select(element);
+		select.selectByValue(value);
+	}
+	
+	//16. 
 	//To Print all the Values from Dropdown and Select a Value from Dropdown.
 	public static void selectDropDownValue(String xpathValue, String value)
 	{
@@ -243,7 +243,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//16.
+	//17.
 	//Function to Accept an Alert Pop-Up.
 	public static void acceptAlertPopup() throws InterruptedException
 	{
@@ -261,7 +261,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//17.
+	//18.
 	//Function to Dismiss an Alert Pop-Up.
 	public static void dismissAlertPopup() throws InterruptedException
 	{
@@ -279,7 +279,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//18.
+	//19.
 	//Method to Click on Element using Actions Class.
 	public void clickOnElementUsingActions(WebElement element)
 	{
@@ -287,7 +287,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).click().perform();
 	}
 		
-	//19.
+	//20.
 	//Method to Click on Element using JavaScript.
 	public void clickOnElementUsingJs(WebElement element)
 	{
@@ -295,7 +295,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].click();", element);
 	}
 		
-	//20.
+	//21.
 	//Method to Match Value with List of Elements and Click on it.
 	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched)
 	{
@@ -309,7 +309,7 @@ public class TestUtility extends TestBase
 		}
 	}
 		
-	//21.
+	//22.
 	//To Select Calendar Date Or Data Picker Using Java Script Executor.
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue)
 	{
@@ -317,7 +317,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('value','"+dateValue+"');", element);	
 	}
 	
-	//22.
+	//23.
 	//Function to Mouse Hover and Click Or Select an Element using Actions Class.
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
@@ -325,7 +325,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).build().perform();
 	}
 	
-	//23.
+	//24.
 	//Function to Drag and Drop using Actions Class.
 	public static void dragAndDrop(WebDriver driver, WebElement elementOne, WebElement elementTwo)
 	{
@@ -333,7 +333,7 @@ public class TestUtility extends TestBase
 		actions.dragAndDrop(elementOne, elementTwo).release().build().perform();
 	}
 	
-	//24.
+	//25.
 	//Function to Right Click using Actions Class.
 	public static void rightClick(WebDriver driver, WebElement element)
 	{
@@ -341,7 +341,7 @@ public class TestUtility extends TestBase
 		actions.contextClick(element).build().perform();
 	}
 	
-	//25.
+	//26.
 	//Function to Double Click using Actions Class.
 	public static void doubleClick(WebDriver driver, WebElement element)
 	{
@@ -349,7 +349,7 @@ public class TestUtility extends TestBase
 		actions.doubleClick(element).build().perform();
 	}
 
-	//26.
+	//27.
 	//To Click on Element Using Java Script.
 	public static void clickElementByJS(WebElement element, WebDriver driver)
     {
@@ -357,7 +357,7 @@ public class TestUtility extends TestBase
     	js.executeScript("arguments[0].click();", element);	
     }
 	
-	//27.
+	//28.
 	//To Refresh Browser Using Java Script.
 	public static void refreshBrowserByJS(WebDriver driver)
     {
@@ -365,7 +365,7 @@ public class TestUtility extends TestBase
     	js.executeScript("history.go(0)");
     }
 	
-	//28.
+	//29.
 	//To Get Title Using Java Script.
 	public static String getTitleByJS(WebDriver driver)
     {
@@ -374,7 +374,7 @@ public class TestUtility extends TestBase
     	return title;
     }
 	
-	//29.
+	//30.
 	//To Scroll Down the Page Using Java Script.
 	public static void scrollPageDown(WebDriver driver)
     {
@@ -382,7 +382,7 @@ public class TestUtility extends TestBase
     	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 	
-	//30.
+	//31.
 	//Extent Report - 1.
 	public static String getSystemDate() 
 	{
@@ -391,7 +391,7 @@ public class TestUtility extends TestBase
 		return dateFormat.format(date);
 	}
 			
-	//31. 
+	//32. 
 	//Extent Report - 2.
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
@@ -407,7 +407,7 @@ public class TestUtility extends TestBase
 		return destination;
 	}
 	
-	//32. 
+	//33. 
 	//Set Date For Log4J.
 	public static void setDateForLog4j() 
 	{
