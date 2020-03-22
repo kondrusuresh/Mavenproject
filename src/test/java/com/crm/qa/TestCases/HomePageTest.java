@@ -40,21 +40,17 @@ public class HomePageTest extends TestBase
 		dealsPage = new DealsPage();
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 	}
-	
-	//Test Cases Should be Separated - All Test Cases are independent.
-	//@BeforeMethod - Every Test Case - Launch the Browser and Login.
-	//@Test - Execute Test Cases.
-	//@AfterMethod - Every Test Case - Close the Browser.
-	@Test(priority=1)
+
+	@Test(priority=1, enabled=true)
 	public void verifyHomePageTitleTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "CRMPRO123", "Home Page Title is not Matched");
+		Assert.assertEquals(homePageTitle, "CRMPRO", "Home Page Title is not Matched");
 		Log.info("Home Page Title Verified");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, enabled=true)
 	public void verifyUserNameTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
@@ -63,7 +59,7 @@ public class HomePageTest extends TestBase
 		Log.info("UserName Verified");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, enabled=true)
 	public void verifyContactsLinkTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
@@ -72,7 +68,7 @@ public class HomePageTest extends TestBase
 		Log.info("Switched into Frame and Clicked on Contacts Link");
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4, enabled=true)
 	public void verifyDealsPageLinkTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());

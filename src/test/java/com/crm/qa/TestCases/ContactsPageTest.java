@@ -23,7 +23,8 @@ public class ContactsPageTest extends TestBase
 	ContactsPage contactsPage;
 	DealsPage dealsPage;
 	
-	String sheetName = "Contacts"; //Passing Excel Sheet Name
+	//Providing Excel Sheet Name for DataProvider.
+	String sheetName = "Contacts"; 
 	
 	public ContactsPageTest()
 	{
@@ -42,47 +43,52 @@ public class ContactsPageTest extends TestBase
 		contactsPage = new ContactsPage();
 		dealsPage = new DealsPage();
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
-		testUtil.switchToFrame();
-		contactsPage = homePage.clickOnContactsLink();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled=true)
 	public void verifyContactsPageLabelTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
+		testUtil.switchToFrame();
+		contactsPage = homePage.clickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts Label is Missing in the Page");
 		Log.info("Verified Contacts Page Label");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, enabled=true)
 	public void selectSingleContactsTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		contactsPage.selectContactByName("Sai Baba");
+		testUtil.switchToFrame();
+		contactsPage = homePage.clickOnContactsLink();
+		contactsPage.selectContactByName("Ram Kumar");
 		Log.info("Verified Single Contacts");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, enabled=true)
 	public void selectMultipleContactsTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		contactsPage.selectContactByName("Sai Baba");
-		contactsPage.selectContactByName("Pavan KrishnanReddy");
+		testUtil.switchToFrame();
+		contactsPage = homePage.clickOnContactsLink();
+		contactsPage.selectContactByName("Ram Kumar");
+		contactsPage.selectContactByName("Sanjay Kumar");
 		Log.info("Verified Multiple Contacts");
 	}
 	
-	//We are using Data Provider here to Access Data from Excel Sheet
+	//We are using Data Provider to Fetch the Data from Excel Sheet.
 	@DataProvider
-	public Object[][] getCRMContactsTestData() //To Access Sheet from Test Data Sheet
+	public Object[][] getCRMContactsTestData()
 	{
 		Object data [][] = TestUtility.getTestData(sheetName);
 		return data;
 	}
 	
-	@Test(priority=4, dataProvider="getCRMContactsTestData")
+	@Test(priority=4, enabled=true, dataProvider="getCRMContactsTestData")
 	public void validateCreateNewContactTest(Method method, String Title, String FirstName, String LastName, String Company)
 	{
 		extentTest = extent.startTest(method.getName());
+		testUtil.switchToFrame();
 		homePage.clickOnNewContactLink();
 		contactsPage.createNewContact(Title, FirstName, LastName, Company);
 		Log.info("New Contacts Created Successfully");

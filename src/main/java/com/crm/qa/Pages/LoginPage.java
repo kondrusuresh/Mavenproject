@@ -9,8 +9,6 @@ import com.crm.qa.BaseClass.TestBase;
 
 public class LoginPage extends TestBase 
 {
-	//Page Factory or Object Repository Where we store all WebElements.
-	//@FindBy will automatically do => driver.findElement(By.name(""));
 	@FindBy(name="username")
 	WebElement username;
 	
@@ -26,8 +24,6 @@ public class LoginPage extends TestBase
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;
 	
-	//Initializing [Page Objects] all Object Repository Elements with help of Page Factory in Constructor.
-	//We initialize Page Factory Using initElements(driver, this) //This refers to Current Class Object.
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);

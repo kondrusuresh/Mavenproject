@@ -21,8 +21,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Xls_Reader 
 {
-	//Below all methods are implemented using Apache POI Jars/APIs.
-	//Excel Sheet must be always saved with Xlsx.
 	public String path;
 	public FileInputStream fis = null;
 	public FileOutputStream fileOut = null;
@@ -95,8 +93,8 @@ public class Xls_Reader
 				return "";
 			if (cell.getCellType() == Cell.CELL_TYPE_STRING)
 				return cell.getStringCellValue();
-			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
-
+			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) 
+			{
 				String cellText = String.valueOf(cell.getNumericCellValue());
 				if (HSSFDateUtil.isCellDateFormatted(cell)) 
 				{
@@ -144,8 +142,8 @@ public class Xls_Reader
 
 			if (cell.getCellType() == Cell.CELL_TYPE_STRING)
 				return cell.getStringCellValue();
-			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
-
+			else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA) 
+			{
 				String cellText = String.valueOf(cell.getNumericCellValue());
 				if (HSSFDateUtil.isCellDateFormatted(cell)) 
 				{

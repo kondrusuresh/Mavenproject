@@ -3,12 +3,14 @@ package com.crm.qa.BaseClass;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -26,17 +28,17 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TestBase
 {
 	public static WebDriver driver; 
-	public static Properties property; //Making public So that we can use in all Child Classes.
+	public static Properties property;
+	public static ChromeOptions chromeOptions;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static Logger Log;
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 		
-	//Using Base Class we achieving Inheritance Concept from Java.
-	public TestBase() //Constructor to read data from property file.
+	public TestBase()
 	{
-		Log = Logger.getLogger(this.getClass()); //Logger Implementation.
+		Log = Logger.getLogger(this.getClass());
 		try 
 		{
 			property = new Properties();
@@ -57,7 +59,7 @@ public class TestBase
 	public void setExtent()
 	{
 		TestUtility.setDateForLog4j();
-		//Telling System Where Exactly Extent Report has to be Generated under Project.
+		
 		extent = new ExtentReports(System.getProperty("user.dir") + "/CRMExtentResults/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
 		extent.addSystemInfo("Host Name", "Pavan's Windows System");
 		extent.addSystemInfo("User Name", "Pavan KrishnanReddy");
@@ -68,8 +70,11 @@ public class TestBase
 	{
 		if(Browser.equals("chrome"))
 		{
+			chromeOptions = new ChromeOptions();
+			chromeOptions.setExperimentalOption("useAutomationExtension", false);
+			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(chromeOptions);
 		}
 		else if(Browser.equals("IE"))
 		{
