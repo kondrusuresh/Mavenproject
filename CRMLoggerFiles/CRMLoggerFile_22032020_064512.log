@@ -1,0 +1,62 @@
+2020-03-22 18:45:31,194  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-03-22 18:45:31,286  INFO [main] LoginPage:40 - Login Page Title Verified
+2020-03-22 18:45:31,915  INFO [main] LoginPage:136 - Browser Terminated
+2020-03-22 18:45:31,919  INFO [main] LoginPage:137 - -----------------------------------------------
+2020-03-22 18:45:44,802  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-03-22 18:45:52,725  INFO [main] HomePage:50 - Home Page Title Verified
+2020-03-22 18:45:53,340  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:45:53,343  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:46:03,865  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:46:13,279  INFO [main] ContactsPage:55 - Verified Contacts Page Label
+2020-03-22 18:46:13,916  INFO [main] ContactsPage:136 - Browser Terminated
+2020-03-22 18:46:13,918  INFO [main] ContactsPage:137 - -----------------------------------------------
+2020-03-22 18:46:25,420  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-03-22 18:46:25,483  INFO [main] LoginPage:49 - CRM Logo Verified
+2020-03-22 18:46:26,263  INFO [main] LoginPage:136 - Browser Terminated
+2020-03-22 18:46:26,265  INFO [main] LoginPage:137 - -----------------------------------------------
+2020-03-22 18:46:40,065  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-03-22 18:46:48,837  INFO [main] HomePage:59 - UserName Verified
+2020-03-22 18:46:49,506  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:46:49,507  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:47:06,167  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:47:17,214  INFO [main] ContactsPage:65 - Verified Single Contacts
+2020-03-22 18:47:17,824  INFO [main] ContactsPage:136 - Browser Terminated
+2020-03-22 18:47:17,825  INFO [main] ContactsPage:137 - -----------------------------------------------
+2020-03-22 18:47:31,335  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-03-22 18:47:42,550  INFO [main] HomePage:57 - Successfully Logged into CRM Application
+2020-03-22 18:47:43,198  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:47:43,199  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:47:58,464  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-03-22 18:48:13,479  INFO [main] ContactsPage:68 - Switched into Frame and Clicked on Contacts Link
+2020-03-22 18:48:14,108  INFO [main] ContactsPage:136 - Browser Terminated
+2020-03-22 18:48:14,109  INFO [main] ContactsPage:137 - -----------------------------------------------
+2020-03-22 18:48:24,411  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:48:36,682  INFO [main] ContactsPage:76 - Verified Multiple Contacts
+2020-03-22 18:48:37,326  INFO [main] ContactsPage:136 - Browser Terminated
+2020-03-22 18:48:37,328  INFO [main] ContactsPage:137 - -----------------------------------------------
+2020-03-22 18:48:52,147  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-03-22 18:49:02,476  INFO [main] DealsPage:77 - Switched into Frame and Clicked on Deals Link
+2020-03-22 18:49:03,135  INFO [main] DealsPage:136 - Browser Terminated
+2020-03-22 18:49:03,136  INFO [main] DealsPage:137 - -----------------------------------------------
+2020-03-22 18:49:17,759  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:49:35,062  INFO [main] HomePage:94 - New Contacts Created Successfully
+2020-03-22 18:49:35,670  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:49:35,671  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:49:53,259  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:50:07,458  INFO [main] HomePage:94 - New Contacts Created Successfully
+2020-03-22 18:50:08,120  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:50:08,121  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:50:19,463  INFO [main] TestUtility:40 - Application Launched Successfully
+2020-03-22 18:50:37,525  INFO [main] HomePage:94 - New Contacts Created Successfully
+2020-03-22 18:50:38,142  INFO [main] HomePage:136 - Browser Terminated
+2020-03-22 18:50:38,143  INFO [main] HomePage:137 - -----------------------------------------------
+2020-03-22 18:50:38,199 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-22 18:50:38,201 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-22 18:50:38,208 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-22 18:50:38,210 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-22 18:50:38,211 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-22 18:50:38,559 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-22 18:50:38,559 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-22 18:50:38,560 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-22 18:50:38,562 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-22 18:50:38,562 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
