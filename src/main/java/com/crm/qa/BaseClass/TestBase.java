@@ -117,11 +117,11 @@ public class TestBase
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getName()); //To Add Name in Extent Report.
-			extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable()); //To Add Errors and Exceptions in Extent Report.
+			extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
+			extentTest.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable()); 
 		
 			String screenshotPath = TestUtility.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //To Add Screenshot in Extent Report.
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); 
 		}
 		else if(result.getStatus()==ITestResult.SKIP)
 		{
@@ -131,7 +131,7 @@ public class TestBase
 		{
 			extentTest.log(LogStatus.PASS, "Test Case Passed is " + result.getName());
 		}
-		extent.endTest(extentTest); //Ending Test and Ends the Current Test and Prepare to Create HTML Report.
+		extent.endTest(extentTest); 
 		driver.quit();
 		Log.info("Browser Terminated");
 		Log.info("-----------------------------------------------");
