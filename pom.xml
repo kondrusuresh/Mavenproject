@@ -5,8 +5,6 @@
 	<artifactId>MavenHybridFramework</artifactId>
 	<version>Mav</version>
 
-	<!--Command to Run Smoke Profile - mvn test -PSmoke -->
-	<!--Command to Run Regression Profile - mvn test -PRegression -->
 	<profiles>
 		<profile>
 			<id>Smoke</id>
