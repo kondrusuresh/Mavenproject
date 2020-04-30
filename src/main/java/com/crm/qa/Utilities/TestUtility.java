@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -138,7 +139,7 @@ public class TestUtility extends TestBase
 		try
 		{
 			driver.switchTo().frame(frame);
-			System.out.println("Navigated to Frame with Id " + frame);
+			System.out.println("Navigated to Frame with Id " +frame);
 		} 
 		catch (NoSuchFrameException e) 
 		{
@@ -288,14 +289,6 @@ public class TestUtility extends TestBase
 	}
 		
 	//20.
-	//Method to Click on Element using JavaScript.
-	public void clickOnElementUsingJs(WebElement element)
-	{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", element);
-	}
-		
-	//21.
 	//Method to Match Value with List of Elements and Click on it.
 	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched)
 	{
@@ -309,7 +302,7 @@ public class TestUtility extends TestBase
 		}
 	}
 		
-	//22.
+	//21.
 	//To Select Calendar Date Or Data Picker Using Java Script Executor.
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue)
 	{
@@ -317,7 +310,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('value','"+dateValue+"');", element);	
 	}
 	
-	//23.
+	//22.
 	//Function to Mouse Hover and Click Or Select an Element using Actions Class.
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
@@ -325,12 +318,20 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).build().perform();
 	}
 	
-	//24.
-	//Function to Drag and Drop using Actions Class.
-	public static void dragAndDrop(WebDriver driver, WebElement elementOne, WebElement elementTwo)
+	//23.
+	//Function to Drag and Drop using Actions Class - 1.
+	public static void dragAndDrop_1(WebDriver driver, WebElement sourceElement, WebElement destinationElement)
 	{
 		Actions actions = new Actions(driver);
-		actions.dragAndDrop(elementOne, elementTwo).release().build().perform();
+		actions.dragAndDrop(sourceElement, destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
+	}
+	
+	//24.
+	//Function to Drag and Drop using Actions Class - 2.
+	public static void dragAndDrop_2(WebDriver driver, WebElement sourceElement, WebElement destinationElement)
+	{
+		Actions actions = new Actions(driver);
+		actions.clickAndHold(sourceElement).pause(Duration.ofSeconds(2)).moveToElement(destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
 	}
 	
 	//25.
@@ -350,7 +351,7 @@ public class TestUtility extends TestBase
 	}
 
 	//27.
-	//To Click on Element Using Java Script.
+	//Function to Click on Element Using Java Script.
 	public static void clickElementByJS(WebElement element, WebDriver driver)
     {
     	JavascriptExecutor js = ((JavascriptExecutor) driver);
