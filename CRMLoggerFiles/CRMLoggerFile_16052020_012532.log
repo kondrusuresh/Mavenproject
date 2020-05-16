@@ -1,0 +1,38 @@
+2020-05-16 13:25:45,401  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-05-16 13:25:45,471  INFO [main] LoginPage:40 - Login Page Title Verified
+2020-05-16 13:25:46,319  INFO [main] LoginPage:136 - Browser Terminated
+2020-05-16 13:25:46,322  INFO [main] LoginPage:137 - -----------------------------------------------
+2020-05-16 13:25:57,920  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-05-16 13:26:05,625  INFO [main] HomePage:50 - Home Page Title Verified
+2020-05-16 13:26:06,285  INFO [main] HomePage:136 - Browser Terminated
+2020-05-16 13:26:06,288  INFO [main] HomePage:137 - -----------------------------------------------
+2020-05-16 13:26:16,513  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-05-16 13:26:16,580  INFO [main] LoginPage:49 - CRM Logo Verified
+2020-05-16 13:26:17,189  INFO [main] LoginPage:136 - Browser Terminated
+2020-05-16 13:26:17,191  INFO [main] LoginPage:137 - -----------------------------------------------
+2020-05-16 13:26:29,436  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-05-16 13:26:36,597  INFO [main] HomePage:59 - UserName Verified
+2020-05-16 13:26:37,207  INFO [main] HomePage:136 - Browser Terminated
+2020-05-16 13:26:37,209  INFO [main] HomePage:137 - -----------------------------------------------
+2020-05-16 13:26:49,106  INFO [main] WebEventListener:29 - Application Launched Successfully
+2020-05-16 13:26:56,254  INFO [main] HomePage:57 - Successfully Logged into CRM Application
+2020-05-16 13:26:56,874  INFO [main] HomePage:136 - Browser Terminated
+2020-05-16 13:26:56,876  INFO [main] HomePage:137 - -----------------------------------------------
+2020-05-16 13:27:08,277  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-05-16 13:27:17,691  INFO [main] ContactsPage:68 - Switched into Frame and Clicked on Contacts Link
+2020-05-16 13:27:18,327  INFO [main] ContactsPage:136 - Browser Terminated
+2020-05-16 13:27:18,328  INFO [main] ContactsPage:137 - -----------------------------------------------
+2020-05-16 13:27:30,796  INFO [main] WebEventListener:35 - Application Launched Successfully
+2020-05-16 13:27:40,338  INFO [main] DealsPage:77 - Switched into Frame and Clicked on Deals Link
+2020-05-16 13:27:40,939  INFO [main] DealsPage:136 - Browser Terminated
+2020-05-16 13:27:40,940  INFO [main] DealsPage:137 - -----------------------------------------------
+2020-05-16 13:27:40,983 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-05-16 13:27:40,985 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-05-16 13:27:40,987 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-05-16 13:27:40,990 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-05-16 13:27:40,991 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-05-16 13:27:41,420 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-05-16 13:27:41,421 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-05-16 13:27:41,422 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-05-16 13:27:41,423 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-05-16 13:27:41,424 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

@@ -54,7 +54,7 @@ public class HomePageTest extends TestBase
 	public void verifyUserNameTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 		Log.info("UserName Verified");
 	}
@@ -63,7 +63,7 @@ public class HomePageTest extends TestBase
 	public void verifyContactsLinkTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		Log.info("Switched into Frame and Clicked on Contacts Link");
 	}
@@ -72,7 +72,7 @@ public class HomePageTest extends TestBase
 	public void verifyDealsPageLinkTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		dealsPage = homePage.clickOnDealsLink();
 		Log.info("Switched into Frame and Clicked on Deals Link");
 	}

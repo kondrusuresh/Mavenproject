@@ -23,7 +23,6 @@ public class ContactsPageTest extends TestBase
 	ContactsPage contactsPage;
 	DealsPage dealsPage;
 	
-	//Providing Excel Sheet Name for DataProvider.
 	String sheetName = "Contacts"; 
 	
 	public ContactsPageTest()
@@ -49,7 +48,7 @@ public class ContactsPageTest extends TestBase
 	public void verifyContactsPageLabelTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts Label is Missing in the Page");
 		Log.info("Verified Contacts Page Label");
@@ -59,7 +58,7 @@ public class ContactsPageTest extends TestBase
 	public void selectSingleContactsTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		contactsPage.selectContactByName("Ram Kumar");
 		Log.info("Verified Single Contacts");
@@ -69,14 +68,13 @@ public class ContactsPageTest extends TestBase
 	public void selectMultipleContactsTest(Method method)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		contactsPage.selectContactByName("Ram Kumar");
 		contactsPage.selectContactByName("Sanjay Kumar");
 		Log.info("Verified Multiple Contacts");
 	}
 	
-	//We are using Data Provider to Fetch the Data from Excel Sheet.
 	@DataProvider
 	public Object[][] getCRMContactsTestData()
 	{
@@ -88,7 +86,7 @@ public class ContactsPageTest extends TestBase
 	public void validateCreateNewContactTest(Method method, String Title, String FirstName, String LastName, String Company)
 	{
 		extentTest = extent.startTest(method.getName());
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		homePage.clickOnNewContactLink();
 		contactsPage.createNewContact(Title, FirstName, LastName, Company);
 		Log.info("New Contacts Created Successfully");

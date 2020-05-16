@@ -62,8 +62,8 @@ public class TestBase
 		
 		extent = new ExtentReports(System.getProperty("user.dir") + "/CRMExtentResults/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
 		extent.addSystemInfo("Host Name", "Pavan's Windows System");
-		extent.addSystemInfo("User Name", "Pavan KrishnanReddy");
-		extent.addSystemInfo("Environment", "Automation Testing");
+		extent.addSystemInfo("User Name", "Pavan Kumar K J");
+		extent.addSystemInfo("Environment", "Automation Test Report");
 	}
 	
 	public static void initialization(String Browser)
@@ -92,7 +92,7 @@ public class TestBase
 		}
 		
 		e_driver = new EventFiringWebDriver(driver);
-		//Now create object of EventListerHandler to register it with EventFiringWebDriver.
+		
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;

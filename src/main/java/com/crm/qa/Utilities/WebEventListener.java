@@ -1,24 +1,5 @@
 package com.crm.qa.Utilities;
 
-//********************Purpose of WebDriverEventListener*****************//
-//This class implements the WebDriverEventListener, which is included under events.
-//The purpose of implementing this interface to override all the methods & define useful Log Statements. 
-//which would be displayed/logged as the application under test is being run.
-//Do not call any of these methods, instead these methods will be invoked automatically
-//As an when the action done (click, findBy etc). 
-//We get proper Error Console Logs & What's happening during the Execution.
-
-//Important:
-//To be done in Base Class -> Create Reference Variable in Class Level.
-//public  static EventFiringWebDriver e_driver;
-//public static WebEventListener eventListener;
-
-//e_driver = new EventFiringWebDriver(driver);
-//Now create object of EventListerHandler to register it with EventFiringWebDriver.
-//eventListener = new WebEventListener();
-//e_driver.register(eventListener);
-//driver = e_driver;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;

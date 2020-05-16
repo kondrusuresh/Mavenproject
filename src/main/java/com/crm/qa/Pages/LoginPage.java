@@ -36,7 +36,7 @@ public class LoginPage extends TestBase
 	
 	public boolean validateCRMImage()
 	{
-		return crmLogo.isDisplayed(); //It will return True Or False if the Logo is Present Or No.
+		return crmLogo.isDisplayed();
 	}
 	
 	public HomePage login(String uname, String pword)
@@ -44,11 +44,10 @@ public class LoginPage extends TestBase
 		username.sendKeys(uname);
 		password.sendKeys(pword);
 		
-		//LoginButton.click();
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", loginButton);
 				
-		return new HomePage(); //Since Login Page is Landing on HomePage
+		return new HomePage();
 	}
 }
 
