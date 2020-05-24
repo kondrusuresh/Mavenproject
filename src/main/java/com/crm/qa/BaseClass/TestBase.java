@@ -19,6 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.crm.qa.Constants.Constants;
 import com.crm.qa.Utilities.TestUtility;
 import com.crm.qa.Utilities.WebEventListener;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -61,6 +62,7 @@ public class TestBase
 		TestUtility.setDateForLog4j();
 		
 		extent = new ExtentReports(System.getProperty("user.dir") + "/CRMExtentResults/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
+		
 		extent.addSystemInfo("Host Name", "Pavan's Windows System");
 		extent.addSystemInfo("User Name", "Pavan Kumar K J");
 		extent.addSystemInfo("Environment", "Automation Test Report");
@@ -73,17 +75,17 @@ public class TestBase
 			chromeOptions = new ChromeOptions();
 			chromeOptions.setExperimentalOption("useAutomationExtension", false);
 			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
 			driver = new ChromeDriver(chromeOptions);
 		}
 		else if(Browser.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
 			driver = new InternetExplorerDriver();
 		}
 		else if(Browser.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
 			driver = new FirefoxDriver();
 		}
 		else
@@ -99,8 +101,8 @@ public class TestBase
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtility.Page_Load_TimeOut, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtility.Implicit_Wait, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		driver.get(property.getProperty("Url"));
 	}
@@ -112,7 +114,7 @@ public class TestBase
 		extent.close();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown(ITestResult result) throws IOException
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
@@ -125,11 +127,11 @@ public class TestBase
 		}
 		else if(result.getStatus()==ITestResult.SKIP)
 		{
-			extentTest.log(LogStatus.SKIP, "Test Case Skipped is " + result.getName());
+			extentTest.log(LogStatus.SKIP, "Test Case Skipped is " +result.getName());
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			extentTest.log(LogStatus.PASS, "Test Case Passed is " + result.getName());
+			extentTest.log(LogStatus.PASS, "Test Case Passed is " +result.getName());
 		}
 		extent.endTest(extentTest); 
 		driver.quit();

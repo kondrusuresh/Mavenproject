@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
+import com.crm.qa.Constants.Constants;
 import com.crm.qa.Pages.ContactsPage;
 import com.crm.qa.Pages.DealsPage;
 import com.crm.qa.Pages.HomePage;
@@ -28,7 +29,7 @@ public class HomePageTest extends TestBase
 	}
 	
 	@Parameters("Browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setUp(String Browser)
 	{
 		initialization(Browser);
@@ -46,7 +47,7 @@ public class HomePageTest extends TestBase
 	{
 		extentTest = extent.startTest(method.getName());
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "CRMPRO", "Home Page Title is not Matched");
+		Assert.assertEquals(homePageTitle, Constants.HOME_PAGE_TITLE, "Home Page Title is not Matched");
 		Log.info("Home Page Title Verified");
 	}
 	

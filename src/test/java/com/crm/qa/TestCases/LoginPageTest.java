@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
+import com.crm.qa.Constants.Constants;
 import com.crm.qa.Pages.HomePage;
 import com.crm.qa.Pages.LoginPage;
 
@@ -22,7 +23,7 @@ public class LoginPageTest extends TestBase
 	}
 	
 	@Parameters("Browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setUp(String Browser)
 	{
 		initialization(Browser);
@@ -36,7 +37,7 @@ public class LoginPageTest extends TestBase
 	{
 		extentTest = extent.startTest(method.getName());
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
+		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "Login Page Title is not Matched");
 		Log.info("Login Page Title Verified");
 	}
 	

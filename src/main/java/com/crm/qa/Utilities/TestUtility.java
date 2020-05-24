@@ -28,31 +28,26 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.crm.qa.BaseClass.TestBase;
+import com.crm.qa.Constants.Constants;
 
 public class TestUtility extends TestBase 
 {
+	public static Workbook book;
+	public static Sheet sheet;
+	
 	public static JavascriptExecutor javaScript;
 	public static Actions actions;
 	public static Select select;
 	public static Alert alert;
-	
+
 	//1.
-	//These 2 variables in TestBase Class for Page Load Time and Implicit Wait.
-	public static long Page_Load_TimeOut = 20;
-	public static long Implicit_Wait = 30;
-
-	//2.
 	//DataProvider Utility is used for getting Data from Excel ==>> Should be used with @DataProvider.
-	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/TestData/FreeCRMTestData.xlsx";
-	static Workbook book;
-	static Sheet sheet;
-
 	public static Object[][] getTestData(String sheetName) 
 	{
 		FileInputStream file = null;
 		try 
 		{
-			file = new FileInputStream(TESTDATA_SHEET_PATH);
+			file = new FileInputStream(Constants.TEST_DATA_SHEET_PATH);
 		} 
 		catch(FileNotFoundException e) 
 		{
@@ -79,7 +74,7 @@ public class TestUtility extends TestBase
 		return data;
 	}
 
-	//3.
+	//2.
 	//To Switch into a Frame using Name.
 	public void switchToFrame(String frameName) 
 	{
@@ -98,7 +93,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//4.
+	//3.
 	//To Switch into a Frame using Index.
 	public void switchToFrame(int frame) 
 	{
@@ -117,7 +112,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//5.
+	//4.
 	//To take Screenshot at End Of Test.
 	public static void takeScreenshotAtEndOfTest() throws IOException 
 	{
@@ -126,7 +121,7 @@ public class TestUtility extends TestBase
 		FileUtils.copyFile(scrFile, new File(currentDir + "/Screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 
-	//6.
+	//5.
 	//Explicit Wait to Click on any WebElement.
 	public static void clickOn(WebDriver driver, WebElement element, int timeout) 
 	{
@@ -134,7 +129,7 @@ public class TestUtility extends TestBase
 		element.click();
 	}
 
-	//7.
+	//6.
 	//Explicit Wait to Send Data to any WebElement.
 	public static void sendKeys(WebDriver driver, WebElement element, int timeout, String value) 
 	{
@@ -142,7 +137,7 @@ public class TestUtility extends TestBase
 		element.sendKeys(value);
 	}
 
-	//8.
+	//7.
 	//Explicit Wait for Element To Be Visible.
 	public static void waitForElementToBeVisible(WebDriver driver, By locator, int timeout)
 	{
@@ -150,7 +145,7 @@ public class TestUtility extends TestBase
 		until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 	
-	//9.
+	//8.
 	//To Handle Multiple Windows or Switch Between Multiple Windows.
 	public void switchWindow(WebDriver driver, String firstWindow, String secondWindow) 
 	{
@@ -164,7 +159,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//10.
+	//19.
 	//To Check Element is Displayed or No.
 	public static void isElementDisplayed(WebElement element) 
 	{
@@ -179,7 +174,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//11.
+	//10.
 	//To Check Element is Enabled or No.
 	public static void isElementEnabled(WebElement element) 
 	{
@@ -194,7 +189,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//12.
+	//11.
 	//To Select a value from Drop Down by using SelectByVisibleTest Method.
 	public static void selectValueFromDropDownByText(WebElement element, String value) 
 	{
@@ -202,7 +197,7 @@ public class TestUtility extends TestBase
 		select.selectByVisibleText(value);
 	}
 
-	//13.
+	//12.
 	//To Select a value from Drop Down by using SelectByIndex Method.
 	public static void selectValueFromDropDownByIndex(WebElement element, int value) 
 	{
@@ -210,7 +205,7 @@ public class TestUtility extends TestBase
 		select.selectByIndex(value);
 	}
 
-	//14.
+	//13.
 	//To Select a value from Drop Down by using SelectByValue Method.
 	public static void selectValueFromDropDownByValue(WebElement element, String value) 
 	{
@@ -218,7 +213,7 @@ public class TestUtility extends TestBase
 		select.selectByValue(value);
 	}
 
-	//15.
+	//14.
 	//To Print all the Values and Select a Required Value from Drop Down.
 	public static void selectDropDownValue(String xpathValue, String value) 
 	{
@@ -236,7 +231,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//16.
+	//15.
 	//To Accept Alert Pop-Up.
 	public static void acceptAlertPopup() throws InterruptedException 
 	{
@@ -254,7 +249,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//17.
+	//16.
 	//To Dismiss Alert Pop-Up.
 	public static void dismissAlertPopup() throws InterruptedException 
 	{
@@ -272,7 +267,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//18.
+	//17.
 	//To Match Value with List of Elements and Click on it.
 	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched) 
 	{
@@ -286,7 +281,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//19.
+	//18.
 	//To Click on Element using Actions Class.
 	public void clickOnElementUsingActions(WebElement element) 
 	{
@@ -294,7 +289,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).click().perform();
 	}
 		
-	//20.
+	//19.
 	//To Mouse Hover and Click Or Select an Element using Actions Class.
 	public static void moveToElement(WebDriver driver, WebElement element) 
 	{
@@ -302,7 +297,7 @@ public class TestUtility extends TestBase
 		actions.moveToElement(element).build().perform();
 	}
 
-	//21.
+	//20.
 	//To Perform Drag and Drop action using Actions Class - 1.
 	public static void dragAndDrop_1(WebDriver driver, WebElement sourceElement, WebElement destinationElement) 
 	{
@@ -310,7 +305,7 @@ public class TestUtility extends TestBase
 		actions.dragAndDrop(sourceElement, destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
 	}
 
-	//22.
+	//21.
 	//To Perform Drag and Drop action using Actions Class - 2.
 	public static void dragAndDrop_2(WebDriver driver, WebElement sourceElement, WebElement destinationElement) 
 	{
@@ -318,7 +313,7 @@ public class TestUtility extends TestBase
 		actions.clickAndHold(sourceElement).pause(Duration.ofSeconds(2)).moveToElement(destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
 	}
 
-	//23.
+	//22.
 	//To Perform Right Click action using Actions Class.
 	public static void rightClick(WebDriver driver, WebElement element) 
 	{
@@ -326,7 +321,7 @@ public class TestUtility extends TestBase
 		actions.contextClick(element).build().perform();
 	}
 
-	//24.
+	//23.
 	//To perform Double Click action using Actions Class.
 	public static void doubleClick(WebDriver driver, WebElement element) 
 	{
@@ -334,7 +329,7 @@ public class TestUtility extends TestBase
 		actions.doubleClick(element).build().perform();
 	}
 
-	//25.
+	//24.
 	//To Highlight WebElement by using JavaScript Executor.
 	public static void highlightElementByJavaScript(WebElement element, WebDriver driver) 
 	{
@@ -347,7 +342,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//26.
+	//25.
 	//To Change the Color of WebElement by using JavaScript Executor.
 	public static void changeColorByJavaScript(String color, WebElement element, WebDriver driver) 
 	{
@@ -363,7 +358,7 @@ public class TestUtility extends TestBase
 		}
 	}
 
-	//27.
+	//26.
 	//To Draw a Border for WebElement by using JavaScript Executor.
 	public static void drawElementBorderByJavaScript(WebElement element, WebDriver driver) 
 	{
@@ -371,7 +366,7 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("arguments[0].style.border='3px solid red'", element);
 	}
 
-	//28.
+	//27.
 	//To Generate an Alert by using JavaScript Executor.
 	public static void generateAlertByJavaScript(WebDriver driver, String alertMessage) 
 	{
@@ -379,7 +374,7 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("alert('" + alertMessage + "')");
 	}
 
-	//29.
+	//28.
 	//To Click on any WebElement by using JavaScript Executor.
 	public static void clickElementByJavaScript(WebElement element, WebDriver driver) 
 	{
@@ -387,7 +382,7 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("arguments[0].click();", element);
 	}
 
-	//30.
+	//39.
 	//To Refresh Browser by using JavaScript Executor.
 	public static void refreshBrowserByJavaScript(WebDriver driver)
 	{
@@ -395,7 +390,7 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("history.go(0)");
 	}
 
-	//31.
+	//30.
 	//To Get Title of the Page by using JavaScript Executor.
 	public static void getPageTitleByJavaScript(WebDriver driver) 
 	{
@@ -404,7 +399,7 @@ public class TestUtility extends TestBase
 		System.out.println("The Title of the Page is ::: " + pageTitle);
 	}
 
-	//32.
+	//31.
 	//To Get the Page Inner Text by using JavaScript Executor.
 	public static void getPageInnerTextByJavaScript(WebDriver driver) 
 	{
@@ -413,7 +408,7 @@ public class TestUtility extends TestBase
 		System.out.println("The Text of the Page is ::: " + pageText);
 	}
 
-	//33.
+	//32.
 	//To Scroll Down the Page by using JavaScript Executor.
 	public static void scrollDownPageByJavaScript(WebDriver driver) 
 	{
@@ -421,7 +416,7 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 	}
 
-	//34.
+	//33.
 	//To Scroll into WebElement View by using JavaScript Executor.
 	public static void scrollIntoElementByJavaScript(WebElement element, WebDriver driver) 
 	{
@@ -429,14 +424,14 @@ public class TestUtility extends TestBase
 		javaScript.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	//35.
+	//34.
 	//To Send Input Data to Text Field by using JavaScript Executor.
 	public static void inputToTextFieldByJavaScript(WebElement element, WebDriver driver, String data) {
 		javaScript = ((JavascriptExecutor) driver);
 		javaScript.executeScript("arguments[0].value='" + data + "'", element);
 	}
 
-	//36.
+	//35.
 	//To Select Calendar Date Or Data Picker Using Java Script Executor.
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue) 
 	{
@@ -444,7 +439,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('value','" + dateValue + "');", element);
 	}
 
-	//37.
+	//36.
 	//Extent Report - 1.
 	public static String getSystemDate() 
 	{
@@ -453,7 +448,7 @@ public class TestUtility extends TestBase
 		return dateFormat.format(date);
 	}
 
-	//38.
+	//37.
 	//Extent Report - 2.
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException 
 	{
@@ -467,7 +462,7 @@ public class TestUtility extends TestBase
 		return destination;
 	}
 
-	//39.
+	//38.
 	//Set Date For Log4J.
 	public static void setDateForLog4j()
 	{

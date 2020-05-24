@@ -31,7 +31,7 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Parameters("Browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setUp(String Browser)
 	{
 		initialization(Browser);
