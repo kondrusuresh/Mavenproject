@@ -13,6 +13,7 @@
 	
 		<classes>
 			<class name="com.crm.qa.TestCases.LoginPageTest"></class>
+			<class name="com.crm.qa.TestCases.HomePageTest"></class>
 		</classes>
 		
 	</test>
