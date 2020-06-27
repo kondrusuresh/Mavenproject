@@ -1,5 +1,6 @@
 package com.crm.qa.Utilities;
 
+import java.lang.InterruptedException;
 import com.crm.qa.Constants.Constants;
 
 public class StaticWaits 
