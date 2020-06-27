@@ -1,0 +1,22 @@
+2020-06-27 17:50:51,628  INFO [main] WebEventListener:30 - Application Launched Successfully
+2020-06-27 17:50:51,723  INFO [main] LoginPage:41 - Login Page Title Verified
+2020-06-27 17:50:52,356  INFO [main] LoginPage:138 - Browser Terminated
+2020-06-27 17:50:52,358  INFO [main] LoginPage:139 - -----------------------------------------------
+2020-06-27 17:51:06,847  INFO [main] WebEventListener:30 - Application Launched Successfully
+2020-06-27 17:51:06,931  INFO [main] LoginPage:50 - CRM Logo Verified
+2020-06-27 17:51:07,554  INFO [main] LoginPage:138 - Browser Terminated
+2020-06-27 17:51:07,557  INFO [main] LoginPage:139 - -----------------------------------------------
+2020-06-27 17:51:22,119  INFO [main] WebEventListener:30 - Application Launched Successfully
+2020-06-27 17:51:30,329  INFO [main] HomePage:58 - Successfully Logged into CRM Application
+2020-06-27 17:51:30,965  INFO [main] HomePage:138 - Browser Terminated
+2020-06-27 17:51:30,967  INFO [main] HomePage:139 - -----------------------------------------------
+2020-06-27 17:51:31,086 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-06-27 17:51:31,092 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-06-27 17:51:31,099 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-27 17:51:31,107 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-27 17:51:31,109 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-06-27 17:51:31,571 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-06-27 17:51:31,572 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-06-27 17:51:31,572 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-27 17:51:31,574 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-27 17:51:31,574 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
