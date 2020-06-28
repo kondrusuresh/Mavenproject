@@ -54,7 +54,7 @@ pipeline
 					steps
 					{
 						echo "Regression Test Execution is Started"
-						bat "mvn test -PRegression"
+						bat "mvn test -PRegression -DskipTests=true"
 						echo "Regression Test Execution is Successful"
 					}
 				}
@@ -66,6 +66,23 @@ pipeline
 			{
 				echo "Release is Started"
 				echo "Release is Successful"
+			}
+		}
+		stage('Publish Reports')
+		{
+			steps
+			{
+				script
+				{
+					publishHTML(
+					[allowMissing: false, 
+					alwaysLinkToLastBuild: true, 
+					keepAll: false, 
+					reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
+					reportFiles: 'CRMExtentReport*.html', 
+					reportName: 'Extent Report', 
+					reportTitles: ''])
+				}
 			}
 		}
 		stage('Notifications')
