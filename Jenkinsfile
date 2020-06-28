@@ -103,7 +103,7 @@ pipeline
 					steps
 					{
 						emailext body: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}",
-						subject: 'Declarative Pipeline Build Status',
+						subject: 'Test Automation Pipeline Build Status',
 						to: 'Pavankrishnan1993@gmail.com'
 					}
 				}
@@ -121,7 +121,7 @@ pipeline
 			message: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}"
         		
 			emailext body: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}",
-			subject: 'Declarative Pipeline Build Status',
+			subject: 'Test Automation Pipeline Build Status',
 			to: 'Pavankrishnan1993@gmail.com'
 		}
         	unstable 
@@ -133,7 +133,7 @@ pipeline
 			message: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}"
         		
 			emailext body: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}",
-			subject: 'Declarative Pipeline Build Status',
+			subject: 'Test Automation Pipeline Build Status',
 			to: 'Pavankrishnan1993@gmail.com'
 		}
 	}
