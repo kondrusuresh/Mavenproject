@@ -3,19 +3,12 @@ pipeline
 	agent any
 	stages
 	{
-		stage('Git Checkout')
-		{
-			steps
-			{
-				git 'https://github.com/PavanReddy77/MavenSurefirePlugin.git'
-			}
-		}
 		stage('SonarQube Analysis')
 		{
 			steps
 			{
 				echo "SonarQube Test is Started"
-				bat 'mvn sonar:sonar -Dsonar.projectName=MavenSurefirePlugin -Dsonar.host.url=http://localhost:9000 -Dlicense.skip=true'
+				bat 'mvn sonar:sonar -Dsonar.projectName=MavenHybridFramework -Dsonar.host.url=http://localhost:9000 -Dlicense.skip=true'
 				echo "SonarQube Test is Completed"
 			}
 		}
@@ -72,17 +65,14 @@ pipeline
 		{
 			steps
 			{
-				script
-				{
-					publishHTML(
-					[allowMissing: false, 
-					alwaysLinkToLastBuild: true, 
-					keepAll: false, 
-					reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
-					reportFiles: 'CRMExtentReport*.html', 
-					reportName: 'Extent Report', 
-					reportTitles: ''])
-				}
+				publishHTML(
+				[allowMissing: false, 
+				alwaysLinkToLastBuild: true, 
+				keepAll: false, 
+				reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
+				reportFiles: 'CRMExtentReport*.html', 
+				reportName: 'Extent Report', 
+				reportTitles: ''])
 			}
 		}
 		stage('Notifications')
