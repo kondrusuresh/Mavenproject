@@ -65,14 +65,17 @@ pipeline
 		{
 			steps
 			{
-				publishHTML(
-				[allowMissing: false, 
-				alwaysLinkToLastBuild: true, 
-				keepAll: false, 
-				reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
-				reportFiles: 'CRMExtentReport*.html', 
-				reportName: 'Extent Report', 
-				reportTitles: ''])
+				script
+				{
+					publishHTML(
+					[allowMissing: false, 
+					alwaysLinkToLastBuild: true, 
+					keepAll: false, 
+					reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
+					reportFiles: 'CRMExtentReport*.html', 
+					reportName: 'Extent Report', 
+					reportTitles: ''])
+				}
 			}
 		}
 		stage('Notifications')
