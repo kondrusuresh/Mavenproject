@@ -1,11 +1,16 @@
-pipeline {
+pipeline 
+{
   agent any
-  stages {
-    stage('Build') {
-      steps {
-        sh 'echo "The Build is Successful"'
-      }
-    }
-
+  stages 
+  {
+    stage('Build')
+		{
+			steps
+			{
+				echo "Build is Started"
+				bat "mvn clean package"
+				echo "Build is Successful"
+			}
+		}
   }
 }
