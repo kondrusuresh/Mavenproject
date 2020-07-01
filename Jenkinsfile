@@ -1,9 +1,9 @@
 pipeline 
 {
-  agent any
-  stages 
-  {
-    stage('Build')
+  	agent any
+  	stages 
+  	{
+   		stage('Build')
 		{
 			steps
 			{
@@ -12,5 +12,5 @@ pipeline
 				echo "Build is Successful"
 			}
 		}
-  }
+  	}
 }
