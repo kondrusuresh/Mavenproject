@@ -8,7 +8,7 @@ pipeline
 			steps
 			{
 				echo "Build is Started"
-				bat "mvn clean package -DskipTests=true"
+				bat "mvn clean install -DskipTests=true"
 				echo "Build is Successful"
 			}
 		}
