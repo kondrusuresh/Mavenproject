@@ -71,7 +71,7 @@ pipeline
 					{
 						publishHTML(target :[allowMissing: false, 
 						alwaysLinkToLastBuild: true, 
-						keepAll: true, 
+						keepAll: false, 
 						reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
 						reportFiles: 'CRMExtentReport*.html', 
 						reportName: 'Extent HTML Report', 
