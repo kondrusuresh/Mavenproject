@@ -70,11 +70,11 @@ pipeline
 					steps
 					{
 						publishHTML([allowMissing: false, 
-            alwaysLinkToLastBuild: true, 
-            keepAll: false, reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
-            reportFiles: 'CRMExtentReport*.html', 
-            reportName: 'Extent HTML Report', 
-            reportTitles: ''])
+            					alwaysLinkToLastBuild: true, 
+            					keepAll: false, reportDir: 'D:\\Automation_Workspace\\MavenHybridFramework\\CRMExtentResults\\', 
+            					reportFiles: 'CRMExtentReport*.html', 
+            					reportName: 'Extent HTML Report', 
+            					reportTitles: ''])
 					}
 				}
 				stage('Allure Report')
