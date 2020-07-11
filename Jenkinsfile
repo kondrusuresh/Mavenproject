@@ -35,7 +35,7 @@ pipeline
 			steps
 			{
 				echo "Regression Test Execution is Started"
-				bat "mvn test -PRegression -DskipTests=true"
+				bat "mvn test -PRegression"
 				echo "Regression Test Execution is Successful"
 			}
 		}
