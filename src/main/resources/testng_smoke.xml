@@ -4,12 +4,11 @@
 <suite name="FREE CRM Application Test Automation Smoke Suite">
 	
 	<listeners>
-		<listener class-name="com.crm.qa.RetryLogic.MyTransformer"/>
+		<listener class-name="com.crm.qa.TestListeners.ExtentReportListener"/>
+		<!-- <listener class-name="com.crm.qa.RetryLogic.MyTransformer"/> -->
 	</listeners>
 	
-	<test name="Free CRM Application Chrome Test Cases">
-	
-	<parameter name="Browser" value="chrome"/>
+	<test name="Free CRM Application Test Cases">
 	
 		<classes>
 			<class name="com.crm.qa.TestCases.LoginPageTest"></class>

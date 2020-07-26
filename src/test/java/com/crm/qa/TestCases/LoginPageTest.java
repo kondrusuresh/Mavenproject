@@ -1,10 +1,7 @@
 package com.crm.qa.TestCases;
 
-import java.lang.reflect.Method;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
@@ -21,39 +18,35 @@ public class LoginPageTest extends TestBase
 	{
 		super();
 	}
-	
-	@Parameters("Browser")
+
 	@BeforeMethod(alwaysRun=true)
-	public void setUp(String Browser)
+	public void setUp()
 	{
-		initialization(Browser);
+		initialization();
 		Log.info("Application Launched Successfully");
 		
 		loginPage = new LoginPage();
 	}
 	
 	@Test(priority=1, enabled=true)
-	public void loginPageTitleTest(Method method)
+	public void loginPageTitleTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "Login Page Title is not Matched");
 		Log.info("Login Page Title Verified");
 	}
 	
 	@Test(priority=2, enabled=true)
-	public void crmLogoImageTest(Method method)
+	public void crmLogoImageTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
 		Log.info("CRM Logo Verified");
 	}
 	
 	@Test(priority=3, enabled=true, invocationCount=1) 
-	public void loginTest(Method method)
+	public void loginTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 		Log.info("Successfully Logged into CRM Application");
 	}

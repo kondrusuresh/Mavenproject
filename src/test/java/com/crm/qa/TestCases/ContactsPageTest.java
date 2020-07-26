@@ -1,11 +1,8 @@
 package com.crm.qa.TestCases;
 
-import java.lang.reflect.Method;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
@@ -29,12 +26,11 @@ public class ContactsPageTest extends TestBase
 	{
 		super();
 	}
-	
-	@Parameters("Browser")
+
 	@BeforeMethod(alwaysRun=true)
-	public void setUp(String Browser)
+	public void setUp()
 	{
-		initialization(Browser);
+		initialization();
 		testUtil = new TestUtility();
 		Log.info("Application Launched Successfully");
 		
@@ -45,9 +41,8 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Test(priority=1, enabled=true)
-	public void verifyContactsPageLabelTest(Method method)
+	public void verifyContactsPageLabelTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts Label is Missing in the Page");
@@ -55,9 +50,8 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Test(priority=2, enabled=true)
-	public void selectSingleContactsTest(Method method)
+	public void selectSingleContactsTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		contactsPage.selectContactByName("Ram Kumar");
@@ -65,9 +59,8 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Test(priority=3, enabled=true)
-	public void selectMultipleContactsTest(Method method)
+	public void selectMultipleContactsTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		contactsPage.selectContactByName("Ram Kumar");
@@ -83,9 +76,8 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	@Test(priority=4, enabled=true, dataProvider="getCRMContactsTestData")
-	public void validateCreateNewContactTest(Method method, String Title, String FirstName, String LastName, String Company)
+	public void validateCreateNewContactTest(String Title, String FirstName, String LastName, String Company)
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		homePage.clickOnNewContactLink();
 		contactsPage.createNewContact(Title, FirstName, LastName, Company);

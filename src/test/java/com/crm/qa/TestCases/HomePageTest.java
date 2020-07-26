@@ -1,10 +1,7 @@
 package com.crm.qa.TestCases;
 
-import java.lang.reflect.Method;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.BaseClass.TestBase;
@@ -27,12 +24,11 @@ public class HomePageTest extends TestBase
 	{
 		super();
 	}
-	
-	@Parameters("Browser")
+
 	@BeforeMethod(alwaysRun=true)
-	public void setUp(String Browser)
+	public void setUp()
 	{
-		initialization(Browser);
+		initialization();
 		Log.info("Application Launched Successfully");
 		
 		testUtil = new TestUtility();
@@ -43,36 +39,32 @@ public class HomePageTest extends TestBase
 	}
 
 	@Test(priority=1, enabled=true)
-	public void verifyHomePageTitleTest(Method method)
+	public void verifyHomePageTitleTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		String homePageTitle = homePage.verifyHomePageTitle();
 		Assert.assertEquals(homePageTitle, Constants.HOME_PAGE_TITLE, "Home Page Title is not Matched");
 		Log.info("Home Page Title Verified");
 	}
 	
 	@Test(priority=2, enabled=true)
-	public void verifyUserNameTest(Method method)
+	public void verifyUserNameTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 		Log.info("UserName Verified");
 	}
 	
 	@Test(priority=3, enabled=true)
-	public void verifyContactsLinkTest(Method method)
+	public void verifyContactsLinkTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 		Log.info("Switched into Frame and Clicked on Contacts Link");
 	}
 	
 	@Test(priority=4, enabled=true)
-	public void verifyDealsPageLinkTest(Method method)
+	public void verifyDealsPageLinkTest()
 	{
-		extentTest = extent.startTest(method.getName());
 		testUtil.switchToFrame("mainpanel");
 		dealsPage = homePage.clickOnDealsLink();
 		Log.info("Switched into Frame and Clicked on Deals Link");
