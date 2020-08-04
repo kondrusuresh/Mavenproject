@@ -23,20 +23,50 @@ pipeline
 		}
 		stage('Smoke TestSuite')
 		{
-			steps
+			parallel
 			{
-				echo "Smoke Test Execution is Started"
-				bat "mvn test -PSmoke"
-				echo "Smoke Test Execution is Successful"
+				stage('Chrome')
+				{
+					steps
+					{
+						echo "Smoke Test Execution is Started in Chrome"
+						bat "mvn test -PSmoke -DBrowser=Chrome"
+						echo "Smoke Test Execution is Successful in Chrome"
+					}
+				}
+				stage('Firefox')
+				{
+					steps
+					{
+						echo "Smoke Test Execution is Started in Firefox"
+						bat "mvn test -PSmoke -DskipTests=true"
+						echo "Smoke Test Execution is Successful in Firefox"
+					}
+				}
 			}
 		}
 		stage('Regression TestSuite')
 		{
-			steps
+			parallel
 			{
-				echo "Regression Test Execution is Started"
-				bat "mvn test -PRegression"
-				echo "Regression Test Execution is Successful"
+				stage('Chrome')
+				{
+					steps
+					{
+						echo "Regression Test Execution is Started in Chrome"
+						bat "mvn test -PRegression -DBrowser=Chrome"
+						echo "Regression Test Execution is Successful in Chrome"
+					}
+				}
+				stage('Firefox')
+				{
+					steps
+					{
+						echo "Regression Test Execution is Started in Firefox"
+						bat "mvn test -PRegression -DskipTests=true"
+						echo "Regression Test Execution is Successful in Firefox"
+					}
+				}
 			}
 		}
 		stage('Publish Reports')
