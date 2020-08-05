@@ -12,8 +12,8 @@
 	
 		<classes>
 			<class name="com.crm.qa.TestCases.LoginPageTest"></class> 
-			<class name="com.crm.qa.TestCases.HomePageTest"></class>
-			<class name="com.crm.qa.TestCases.ContactsPageTest"></class>
+			<!-- <class name="com.crm.qa.TestCases.HomePageTest"></class>
+			<class name="com.crm.qa.TestCases.ContactsPageTest"></class> -->
 		</classes>
 		
 	</test>	
