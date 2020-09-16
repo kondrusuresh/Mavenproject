@@ -1,1 +1,10 @@
-/target/
+###########
+## Maven ##
+###########
+target/
+
+#############
+## Eclipse ##
+#############
+.classpath
+.project
