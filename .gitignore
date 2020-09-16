@@ -2,6 +2,7 @@
 ## Maven ##
 ###########
 target/
+.settings
 
 #############
 ## Eclipse ##
