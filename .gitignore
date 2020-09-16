@@ -2,10 +2,10 @@
 ## Maven ##
 ###########
 target/
-.settings
 
 #############
 ## Eclipse ##
 #############
 .classpath
 .project
+.settings
