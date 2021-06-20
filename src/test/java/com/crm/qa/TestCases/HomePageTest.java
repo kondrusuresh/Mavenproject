@@ -29,7 +29,7 @@ public class HomePageTest extends TestBase
 	public void setUp()
 	{
 		initialization();
-		Log.info("Application Launched Successfully");
+		Log.info("Application Launched Successfully for Testing Purpose");
 		
 		testUtil = new TestUtility();
 		loginPage = new LoginPage();
